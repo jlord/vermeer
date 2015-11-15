@@ -1,0 +1,22 @@
+{
+  "name": "vermeer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlord/vermeer.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/jlord/vermeer/issues"
+  },
+  "homepage": "https://github.com/jlord/vermeer#readme",
+  "dependencies": {
+    "tabletop": "^1.4.2"
+  }
+}
