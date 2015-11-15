@@ -1,0 +1,25 @@
+body {
+  font-family: 'Helvetia', Arial, sans-serif;
+  /*background: #fafafa;*/
+  color: #333;
+}
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.meta {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #777;
+}
+
+.painting {
+  width: 400px;
+  float: left;
+}
+
+.painting img {
+  width: 100%;
+}

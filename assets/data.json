@@ -1,0 +1,47 @@
+var vermeers = [
+ {
+  "Paintings": "The Guitar Player",
+  "Count": "1",
+  "Location": "Kenwood House",
+  "City": "London, England",
+  "Date": "11/15/2105",
+  "Photo": "https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xpt1/t51.2885-15/e35/12237392_1520161508294697_1651392027_n.jpg",
+  "Notes": ""
+ },
+ {
+  "Paintings": "A Lady Writing, Astronomer",
+  "Count": "2",
+  "Location": "Museum of Fine Arts",
+  "City": "Boston, Massachusetts",
+  "Date": "10/11/2015",
+  "Photo": "https://scontent-lhr3-1.cdninstagram.com/hphotos-xta1/t51.2885-15/e35/12070898_890464014342280_1126695486_n.jpg",
+  "Notes": "Astronomer on loan from the Louvre."
+ },
+ {
+  "Paintings": "A Maid Asleep, The Allegory of Faith, Study of a Young Woman, Woman with a Lute",
+  "Count": "4",
+  "Location": "Metropolitan Museum of Art",
+  "City": "New York, New York",
+  "Date": "10/8/2015",
+  "Photo": "https://scontent-lhr3-1.cdninstagram.com/hphotos-xtp1/t51.2885-15/e35/11326776_111831762506187_311061704_n.jpg",
+  "Notes": "Young Woman with a Water Pitcher on loan to Kyoto."
+ },
+ {
+  "Paintings": "Officer and Lauhing Girl, Mistress and Maid, Girl Interrupted in her Music",
+  "Count": "3",
+  "Location": "The Frick Collection",
+  "City": "New York, New York",
+  "Date": "10/6/2015",
+  "Photo": "https://c2.staticflickr.com/6/5798/23014425886_16f689727a_b.jpg",
+  "Notes": "You can't take photos of the paintings, so this is the courtyard."
+ },
+ {
+  "Paintings": "The Little Street, The Milkmaid, The Love Letter",
+  "Count": "3",
+  "Location": "Rijksmuseum",
+  "City": "Amsterdam, Netherlands",
+  "Date": "8/18/2015",
+  "Photo": "https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xtp1/t51.2885-15/e15/11326035_465625853624933_1661009052_n.jpg",
+  "Notes": "Woman in Blue Reading a Letter on loan to Washington, DC."
+ }
+]
