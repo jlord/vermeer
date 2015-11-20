@@ -43,5 +43,23 @@ var vermeers = [
   "Date": "8/18/2015",
   "Photo": "https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xtp1/t51.2885-15/e15/11326035_465625853624933_1661009052_n.jpg",
   "Notes": "Woman in Blue Reading a Letter on loan to Washington, DC."
+ },
+ {
+  "Paintings": "The Music Lesson",
+  "Count": "1",
+  "Location": "The Queen's Gallery, Buckingham Palace",
+  "City": "London, England",
+  "Date": "11/19/2015",
+  "Photo": "https://scontent.cdninstagram.com/hphotos-xfp1/t51.2885-15/e35/12237181_194547650880270_167689693_n.jpg",
+  "Notes": ""
+ },
+ {
+  "Paintings": "A Lady Standing at a Virginal, A Lady Seated at a Virginal",
+  "Count": "2",
+  "Location": "National Gallery London",
+  "City": "London, England",
+  "Date": "11/19/2015",
+  "Photo": "https://scontent.cdninstagram.com/hphotos-xtp1/t51.2885-15/e35/12276839_781940161934116_972495617_n.jpg",
+  "Notes": ""
  }
 ]
