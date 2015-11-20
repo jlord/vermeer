@@ -11,6 +11,6 @@ function init() {
 
 function saveData(data, tabletop) {
   var vermeers = 'var vermeers = ' + JSON.stringify(data, null, ' ')
-  fs.writeFileSync('data.json', vermeers)
+  fs.writeFileSync('assets/data.json', vermeers)
   console.log('Done')
 }
