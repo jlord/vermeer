@@ -1,18 +1,29 @@
 body {
-  font-family: 'Helvetia', Arial, sans-serif;
+  font-family: Lato, 'Helvetia', Arial, sans-serif;
   /*background: #fafafa;*/
   color: #333;
+  background: #fffafa;
 }
 
 a {
-  color: rgb(225, 214, 205);
+  color: rgb(179, 155, 146);
+}
+
+p {
+  font-weight: 300;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+  font-weight: 400;
 }
 
 header h1 {
-  font-family: Playfair Display;
-  font-style: italic;
+  font-family: Lato;
+  /*font-style: italic;*/
   font-size: 60px;
   margin: 16px 0 60px;
+  font-weight: 300;
 }
 
 ul.nav {
@@ -21,7 +32,10 @@ ul.nav {
   padding: 0 0 10px 0;
   border-bottom: 1px solid #333;
   text-align: right;
-  font-family: Playfair Display;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 12px;
+  /*font-family: Playfair Display;*/
 
 }
 
