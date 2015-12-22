@@ -3,10 +3,15 @@ body {
   /*background: #fafafa;*/
   color: #333;
   background: #fffafa;
+  padding: 40px 0;
 }
 
 a {
   color: rgb(179, 155, 146);
+}
+
+a:hover {
+ color: rgb(179, 116, 113);
 }
 
 p {
@@ -63,7 +68,7 @@ ul.nav {
 }
 
 .painting-img {
-  width: 400px;
+  /*width: 400px;*/
 }
 
 .painting-img img {
@@ -74,7 +79,7 @@ ul.nav {
   vertical-align: top;
   min-width: 400px;
   max-width: 500px;
-  margin-left: 16px;
+  margin-top: 10px;
 }
 
 .painting-info h3 {

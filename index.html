@@ -18,7 +18,7 @@
       <div class="wrapper">
         <ul class="nav">
           <!-- <li>About</li> -->
-          <a href="#about"><li>The Vermeers that jlord saw</li></a>
+          <a href="#about"><li>About the Vermeers jlord saw</li></a>
         </ul>
         <h1>The Vermeers—</h1>
       </div>
@@ -48,7 +48,7 @@
         <h3>{{Location}}, {{City}}</h3>
         <h5>{{Paintings}}</h5>
         <p class="meta">Visit: {{Date}}</p>
-        <p>{{Notes}}</p></div>
+        {{#Notes}}<p><span class="meta">Notes:</span><br>{{Notes}}</p>{{/Notes}}</div>
     </div>
     {{/rows}}
   </script>
