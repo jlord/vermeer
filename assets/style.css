@@ -49,8 +49,18 @@ ul.nav {
 }
 
 .wrapper {
-  width: 960px;
+  width: 800px;
   margin: 0 auto;
+}
+
+.half {
+  display: inline-block;
+  width: 48%;
+  vertical-align: top;
+}
+
+.half + .half {
+  padding-left: 2%;
 }
 
 .meta {
