@@ -49,10 +49,10 @@
         <img src="{{Photo}}">
       </div>
       <div class="painting-info">
-        <h3>{{Location}}, {{City}}</h3>
-        <h5>{{Paintings}}</h5>
-        <p class="meta">Visit: {{Date}}</p>
-        {{#Notes}}<p><span class="meta">Notes:</span><br>{{Notes}}</p>{{/Notes}}</div>
+        <h2>{{Paintings}}</h2>
+        <br>
+        <p class="meta"><b>Visit</b> {{Date}} // <b>Museum</b> {{Location}} // <b>City</b> {{City}}</p>
+        {{#Notes}}<p><span class="meta"><b>Notes</b> {{Notes}}</p></span>{{/Notes}}</div>
     </div>
     {{/rows}}
   </script>
