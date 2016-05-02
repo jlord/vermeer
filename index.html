@@ -45,14 +45,16 @@
   <script id="paintings_template" type="text/html">
     {{#rows}}
     <div class="painting-container">
-      <div class="painting-img">
+      <div class="painting-img half">
         <img src="{{Photo}}">
       </div>
-      <div class="painting-info">
-        <h3>{{Location}}, {{City}}</h3>
-        <h5>{{Paintings}}</h5>
-        <p class="meta">Visit: {{Date}}</p>
-        {{#Notes}}<p><span class="meta">Notes:</span><br>{{Notes}}</p>{{/Notes}}</div>
+      <div class="painting-info half">
+        <h3><b>{{Paintings}}</b></h3>
+        <div class="painting-details">
+          <h5>{{Location}}, {{City}}</h5>
+          <p class="meta">Visit: {{Date}}</p>
+          {{#Notes}}<p><span class="meta">Notes:</span><br>{{Notes}}</p>{{/Notes}}</div>
+        </div>
     </div>
     {{/rows}}
   </script>

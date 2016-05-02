@@ -6,6 +6,10 @@ body {
   padding: 40px 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 a {
   color: rgb(179, 155, 146);
 }
@@ -55,7 +59,7 @@ ul.nav {
 
 .half {
   display: inline-block;
-  width: 48%;
+  width: 47%;
   vertical-align: top;
 }
 
@@ -89,7 +93,16 @@ ul.nav {
   vertical-align: top;
   min-width: 400px;
   max-width: 500px;
-  margin-top: 10px;
+}
+
+.painting-info h3 {
+  color: #333;
+}
+
+.painting-details {
+  /*background-color: #fff;
+  padding: 12px;*/
+  color: #ecc8c4;
 }
 
 .painting-info h3 {
