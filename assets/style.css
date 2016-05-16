@@ -1,8 +1,18 @@
+html { height: 100%; width: 100%; }
 body {
   font-family: Lato, 'Helvetia', Arial, sans-serif;
-  background: #fafafa;
   color: #333;
   padding: 40px 0;
+  height: 100%; width: 100%;
+  /* gradient bg */
+  background: hsl(56,100%,97%);
+  background: -moz-linear-gradient(-45deg, hsl(56,100%,97%) 0%, hsl(0,0%,86%) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, hsl(56,100%,97%)), color-stop(100%, hsl(0,0%,86%)));
+  background: -webkit-linear-gradient(-45deg, hsl(56,100%,97%) 0%, hsl(0,0%,86%) 100%);
+  background: -o-linear-gradient(-45deg, hsl(56,100%,97%) 0%, hsl(0,0%,86%) 100%);
+  background: -ms-linear-gradient(-45deg, hsl(56,100%,97%) 0%, hsl(0,0%,86%) 100%);
+  background: linear-gradient(135deg, hsl(56,100%,97%) 0%, hsl(0,0%,86%) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffef0', endColorstr='#dbdbdb', GradientType=1 );
 }
 
 * {
