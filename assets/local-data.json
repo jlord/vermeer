@@ -61,5 +61,41 @@ var vermeers = [
   "Date": "11/19/2015",
   "Photo": "assets/imgs/nglnd.jpg",
   "Notes": ""
+},
+{
+ "Paintings": "The Glass of Wine, Woman with a Pearl Necklace",
+ "Count": "2",
+ "Location": "Staatliche Museen Preußischer Kulturbesitz, Gemäldegalerie",
+ "City": "Berlin, Germany",
+ "Date": "05/19/2016",
+ "Photo": "assets/imgs/berlin.jpg",
+ "Notes": ""
+},
+{
+ "Paintings": "The Procuress, A Girl Reading a Letter by an Open Window",
+ "Count": "2",
+ "Location": "Gemäldegalerie Alte Meister",
+ "City": "Dresden, Germany",
+ "Date": "05/19/2016",
+ "Photo": "assets/imgs/dresden.jpg",
+ "Notes": ""
+},
+{
+ "Paintings": "The Procuress, A Girl Reading a Letter by an Open Window",
+ "Count": "2",
+ "Location": "Gemäldegalerie Alte Meister",
+ "City": "The Hague, Netherlands",
+ "Date": "05/19/2016",
+ "Photo": "assets/imgs/dresden.jpg",
+ "Notes": ""
+},
+{
+ "Paintings": "Woman in Blue Reading a Letter",
+ "Count": "1",
+ "Location": "Rijksmuseum",
+ "City": "Amsterdam, Netherlands",
+ "Date": "05/18/2016",
+ "Photo": "assets/imgs/rijks.jpg",
+ "Notes": "Little Street was on loan in the Delft, but this completes seeing each that the Rijksmuseum has."
  }
 ]
