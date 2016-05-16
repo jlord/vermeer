@@ -1,17 +1,17 @@
-html { height: 100%; width: 100%; }
 body {
-  font-family: Lato, 'Helvetia', Arial, sans-serif;
-  color: #333;
+  font-family: 'Source Sans Pro', 'Helvetia', Arial, sans-serif;
+  color: #2b334d;
   padding: 40px 0;
-  height: 100%; width: 100%;
+  height: 100%;
+  overflow: auto;
   /* gradient bg */
   background: hsl(56,100%,97%);
-  background: -moz-linear-gradient(-45deg, hsl(56,100%,97%) 0%, hsl(0,0%,86%) 100%);
+  background: -moz-linear-gradient(-30deg, hsl(56,100%,97%) 0%, hsl(0,0%,86%) 100%);
   background: -webkit-gradient(left top, right bottom, color-stop(0%, hsl(56,100%,97%)), color-stop(100%, hsl(0,0%,86%)));
-  background: -webkit-linear-gradient(-45deg, hsl(56,100%,97%) 0%, hsl(0,0%,86%) 100%);
-  background: -o-linear-gradient(-45deg, hsl(56,100%,97%) 0%, hsl(0,0%,86%) 100%);
-  background: -ms-linear-gradient(-45deg, hsl(56,100%,97%) 0%, hsl(0,0%,86%) 100%);
-  background: linear-gradient(135deg, hsl(56,100%,97%) 0%, hsl(0,0%,86%) 100%);
+  background: -webkit-linear-gradient(-30deg, hsl(56,100%,97%) 0%, hsl(0,0%,86%) 100%);
+  background: -o-linear-gradient(-30deg, hsl(56,100%,97%) 0%, hsl(0,0%,86%) 100%);
+  background: -ms-linear-gradient(-30deg, hsl(56,100%,97%) 0%, hsl(0,0%,86%) 100%);
+  background: linear-gradient(80deg, hsl(56,100%,97%) 0%, hsl(0,0%,86%) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffef0', endColorstr='#dbdbdb', GradientType=1 );
 }
 
@@ -24,25 +24,99 @@ body {
   margin: 0 auto;
 }
 
-.vermeer-stats  ul {
+main {
+  padding: 60px 0;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #2b334d;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  padding-bottom: .5px;
+}
+
+a:hover {
+  color: #5D7192;
+  border-color: #5D7192;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h1 a {
+  border: none;
+}
+
+/*
+   Generic
+*/
+
+ul.no-style {
+  list-style: none;
+  padding: 0; margin: 0;
+}
+
+ul.no-style li {
+  display: inline-block;
+}
+
+ul.no-style li + li {
+  padding-left: 10px;
+}
+
+.no-bold { font-weight: normal; }
+
+.meta {
+  font-size: 12px;
+}
+
+.half {
+  width: calc((99.5% - 18px) / 2);
   display: inline-block;
   vertical-align: top;
-  list-style: none;
 }
 
-.stats-paintings {
-  width: 300px;
+.half + .half {
+  margin-left: 18px;
 }
 
-ul.stats-paintings li {
-  height: 20px; width: 20px;
-  background: pink;
-  margin-right: 4px;
-  margin-bottom: 4px;
-  display: inline-block;
-  border: 1px solid rgba(130, 76, 30, 0.29);
+.half h2 {
+  margin-top: 0;
 }
 
-ul.stats-paintings li.seen {
-  background: blue;
+/*
+   Nav
+*/
+
+nav {
+  text-align: right;
+  border-top: 1px solid #333;
+  width: 100%;
+  padding-top: 10px;
 }
+
+/*
+   Paintings
+*/
+
+.painting-container h3,
+.painting-container p {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.painting-container {
+  overflow: auto;
+  padding-bottom: 40px;
+}
+
+
+
+/*.painting-img {
+  float: right;
+}*/
