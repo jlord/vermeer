@@ -94,13 +94,19 @@ ul.tall-lines li {
 
 .no-bold { font-weight: normal; }
 
-.meta {
+.painting-meta {
+  padding-top: 20px;
+}
+.painting-meta p {
   font-size: 12px;
+  margin: 2px 0;
 }
 
 .force-wrap {
   white-space: nowrap;
 }
+
+/* TODO don't use? */
 
 .half {
   width: calc((99.5% - 18px) / 2);
@@ -152,7 +158,7 @@ footer h4 a {
 */
 
 .painting-container h3,
-.painting-container p {
+.painting-names {
   margin-top: 0;
   margin-bottom: 8px;
 }
@@ -166,4 +172,22 @@ footer h4 a {
 .painting-container {
   overflow: auto;
   padding-bottom: 40px;
+}
+
+.some {
+  width: calc((100% - 18px) * .39);
+  display: inline-block;
+  vertical-align: top;
+  /*background-color: blue;*/
+}
+
+.most {
+  width: calc((100% - 18px) * .6);
+  display: inline-block;
+  vertical-align: top;
+  /*background-color: salmon;*/
+}
+
+.some + .most {
+  margin-left: 23px;
 }

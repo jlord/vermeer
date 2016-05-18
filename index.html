@@ -52,22 +52,20 @@
   <script id="paintings_template" type="text/html">
     {{#rows}}
     <div class="painting-container">
-      <div class="painting-info half">
+      <div class="painting-info some">
         <h3>{{ Location }} <span class="no-bold force-wrap">{{ City }}</span></h3>
 
         <div class="painting-details">
-          <p>{{ Paintings }}</p>
-          <br>
-          <p class="meta">
-            <b>Visit—</b>{{Date}} <a href="">Details</a>
-            <br>
+          <p class="painting-names">{{ Paintings }}</p>
+          <div class="painting-meta">
+            <p><b>Visit—</b>{{Date}} <a href="">Details</a></p>
             {{#Notes}}
-            <span class="meta"><b>Notes—</b>{{Notes}}
+            <p><span class="painting-meta"><b>Notes—</b>{{Notes}}</p>
             {{/Notes}}
-          </p>
+          </div>
         </div>
       </div>
-      <div class="painting-img half">
+      <div class="painting-img most">
         <img src="{{Photo}}">
       </div>
     </div>
