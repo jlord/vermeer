@@ -4,6 +4,7 @@ body {
   padding: 40px 0;
   height: 100%;
   overflow: auto;
+  line-height: 1.2em;
   /* gradient bg */
   background: hsl(56,100%,97%);
   background: -moz-linear-gradient(-30deg, hsl(56,100%,97%) 0%, hsl(0,0%,86%) 100%);
@@ -52,8 +53,12 @@ h1 a {
   border: none;
 }
 
+p {
+  line-height: 1.4em;
+}
+
 /*
-   Generic
+   Utilities
 */
 
 ul.no-style {
@@ -67,6 +72,10 @@ ul.no-style li {
 
 ul.no-style li + li {
   padding-left: 10px;
+}
+
+ul.tall-lines li {
+  line-height: 1.8em;
 }
 
 .no-bold { font-weight: normal; }
@@ -89,6 +98,14 @@ ul.no-style li + li {
   margin-top: 0;
 }
 
+.float-left {
+  float: left;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
 /*
    Nav
 */
@@ -98,6 +115,18 @@ nav {
   border-top: 1px solid #333;
   width: 100%;
   padding-top: 10px;
+}
+
+/*
+   Footer
+*/
+
+footer h4 {
+  margin: 0; padding: 0;
+}
+
+footer h4 a {
+  border: none;
 }
 
 /*
