@@ -4,7 +4,7 @@ body {
   padding: 40px 0;
   height: 100%;
   overflow: auto;
-  line-height: 1.2em;
+  /*line-height: 1.5em !important;*/
   /* gradient bg */
   background: hsl(56,100%,97%);
   background: -moz-linear-gradient(-30deg, hsl(56,100%,97%) 0%, hsl(0,0%,86%) 100%);
@@ -98,6 +98,10 @@ ul.tall-lines li {
   font-size: 12px;
 }
 
+.force-wrap {
+  white-space: nowrap;
+}
+
 .half {
   width: calc((99.5% - 18px) / 2);
   display: inline-block;
@@ -153,13 +157,13 @@ footer h4 a {
   margin-bottom: 8px;
 }
 
+/* TODO */
+
+.painting-container h3 {
+  line-height: 1.5em;
+}
+
 .painting-container {
   overflow: auto;
   padding-bottom: 40px;
 }
-
-
-
-/*.painting-img {
-  float: right;
-}*/
