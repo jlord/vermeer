@@ -184,14 +184,24 @@ footer h4 a {
   width: calc((100% - 18px) * .39);
   display: inline-block;
   vertical-align: top;
+  /*background: salmon;*/
 }
 
 .most {
   width: calc((100% - 18px) * .6);
   display: inline-block;
   vertical-align: top;
+  /*background: pink;*/
 }
 
 .some + .most {
   margin-left: 23px;
+}
+
+.some h2:first-of-type {
+  margin-top: 0;
+}
+
+.most p:first-of-type {
+  margin-top: 0;
 }
