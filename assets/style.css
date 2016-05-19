@@ -130,6 +130,12 @@ ul.tall-lines li {
   display: inline-block;
 }
 
+.divider-line {
+  border-bottom: 2px solid #2b334d;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
 /*
    Nav
 */
@@ -178,14 +184,12 @@ footer h4 a {
   width: calc((100% - 18px) * .39);
   display: inline-block;
   vertical-align: top;
-  /*background-color: blue;*/
 }
 
 .most {
   width: calc((100% - 18px) * .6);
   display: inline-block;
   vertical-align: top;
-  /*background-color: salmon;*/
 }
 
 .some + .most {
