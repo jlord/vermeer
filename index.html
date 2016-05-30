@@ -62,9 +62,12 @@
   <script id="paintings_template" type="text/html">
     {{#rows}}
     <div class="painting-container">
+      <div class="painting-img most f-right">
+        <img src="{{Photo}}">
+      </div>
+
       <div class="painting-info some">
         <h3>{{ Location }} <span class="no-bold force-wrap">{{ City }}</span></h3>
-
         <div class="painting-details">
           <p class="painting-names">{{ Paintings }}</p>
           <div class="painting-meta">
@@ -74,9 +77,6 @@
             {{/Notes}}
           </div>
         </div>
-      </div>
-      <div class="painting-img most">
-        <img src="{{Photo}}">
       </div>
     </div>
     {{/rows}}

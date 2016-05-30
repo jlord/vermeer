@@ -115,6 +115,10 @@ ul.tall-lines li {
   display: inline-block;
 }
 
+.f-right {
+  float: right;
+}
+
 .divider-line {
   border-bottom: 2px solid #2b334d;
   padding-bottom: 20px;
@@ -189,4 +193,12 @@ footer h4 a {
 
 .most p:first-of-type {
   margin-top: 0;
+}
+
+@media (max-width: 900px) {
+  .wrapper { width: 100%; padding: 0 10px; }
+  .most, .some { display: block; width: 100%;}
+  .some + .most { margin-left: 0; }
+  .f-right { float: none; }
+  .painting-info { padding-top: 18px; }
 }
