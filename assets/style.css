@@ -30,6 +30,7 @@ main {
 
 img {
   width: 100%;
+  padding-bottom: 20px;
 }
 
 a {
@@ -104,22 +105,6 @@ ul.tall-lines li {
 
 .force-wrap {
   white-space: nowrap;
-}
-
-/* TODO don't use? */
-
-.half {
-  width: calc((99.5% - 18px) / 2);
-  display: inline-block;
-  vertical-align: top;
-}
-
-.half + .half {
-  margin-left: 18px;
-}
-
-.half h2 {
-  margin-top: 0;
 }
 
 .float-left {
