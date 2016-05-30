@@ -4,7 +4,7 @@ body {
   padding: 40px 0;
   height: 100%;
   overflow: auto;
-  line-height: 1.2em;
+  /*line-height: 1.5em !important;*/
   /* gradient bg */
   background: hsl(56,100%,97%);
   background: -moz-linear-gradient(-30deg, hsl(56,100%,97%) 0%, hsl(0,0%,86%) 100%);
@@ -13,7 +13,6 @@ body {
   background: -o-linear-gradient(-30deg, hsl(56,100%,97%) 0%, hsl(0,0%,86%) 100%);
   background: -ms-linear-gradient(-30deg, hsl(56,100%,97%) 0%, hsl(0,0%,86%) 100%);
   background: linear-gradient(80deg, hsl(56,100%,97%) 0%, hsl(0,0%,86%) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffef0', endColorstr='#dbdbdb', GradientType=1 );
 }
 
 * {
@@ -49,12 +48,27 @@ h1 {
   font-size: 2.5em;
 }
 
+/* TODO */
+
+h1, h2, h3, h4 {
+  font-family: "Merriweather";
+  font-weight: 800;
+}
+
 h1 a {
   border: none;
 }
 
 p {
   line-height: 1.4em;
+}
+
+/* TODO */
+
+em {
+  font-family: "Merriweather";
+  font-style: italic;
+  font-size: .9em;
 }
 
 /*
@@ -80,9 +94,23 @@ ul.tall-lines li {
 
 .no-bold { font-weight: normal; }
 
-.meta {
-  font-size: 12px;
+.painting-meta {
+  padding-top: 20px;
 }
+.painting-meta p {
+  font-size: 12px;
+  margin: 2px 0;
+}
+
+.force-wrap {
+  white-space: nowrap;
+}
+
+.pt-18 {
+  padding-top: 18px;
+}
+
+/* TODO don't use? */
 
 .half {
   width: calc((99.5% - 18px) / 2);
@@ -108,6 +136,12 @@ ul.tall-lines li {
 
 .f-right {
   float: right;
+}
+
+.divider-line {
+  border-bottom: 2px solid #2b334d;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 /*
@@ -138,9 +172,15 @@ footer h4 a {
 */
 
 .painting-container h3,
-.painting-container p {
+.painting-names {
   margin-top: 0;
   margin-bottom: 8px;
+}
+
+/* TODO */
+
+.painting-container h3 {
+  line-height: 1.5em;
 }
 
 .painting-container {
@@ -148,10 +188,36 @@ footer h4 a {
   padding-bottom: 40px;
 }
 
+.some {
+  width: calc((100% - 18px) * .39);
+  display: inline-block;
+  vertical-align: top;
+  /*background: salmon;*/
+}
+
+.most {
+  width: calc((100% - 18px) * .6);
+  display: inline-block;
+  vertical-align: top;
+  /*background: pink;*/
+}
+
+.some + .most {
+  margin-left: 23px;
+}
+
+.some h2:first-of-type {
+  margin-top: 0;
+}
+
+.most p:first-of-type {
+  margin-top: 0;
+}
+
 @media (max-width: 900px) {
   .wrapper { width: 100%; padding: 0 10px; }
-  .half { display: block; width: 100%;}
-  .half + .half { margin-left: 0; }
+  .most, .some { display: block; width: 100%;}
+  .some + .most { margin-left: 0; }
   .f-right { float: none; }
   .painting-info { padding-top: 18px; }
 }

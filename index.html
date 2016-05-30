@@ -20,8 +20,8 @@
         <nav>
           <ul class="no-style">
             <li><a href="about.html">About</a></li>
-            <li><a href="">Visits</a></li>
-            <li><a href="">Stats</a></li>
+            <li><a href="visits.html">Visits</a></li>
+            <li><a href="stats.html">Stats</a></li>
           </ul>
         </nav>
       </div>
@@ -40,8 +40,8 @@
           <h4 class="float-left inline-block"><a href="index.html">Vermeer Goals</a></h4>
           <ul class="no-style">
             <li><a href="about.html">About</a></li>
-            <li><a href="">Visits</a></li>
-            <li><a href="">Stats</a></li>
+            <li><a href="visits.html">Visits</a></li>
+            <li><a href="stats.html">Stats</a></li>
           </ul>
         </nav>
       </div>
@@ -52,22 +52,20 @@
   <script id="paintings_template" type="text/html">
     {{#rows}}
     <div class="painting-container">
-      <div class="painting-img half f-right">
+      <div class="painting-img most f-right">
         <img src="{{Photo}}">
       </div>
-      
-      <div class="painting-info half">
-        <h3>{{ Location }} <span class="no-bold">{{ City }}</span></h3>
+
+      <div class="painting-info some">
+        <h3>{{ Location }} <span class="no-bold force-wrap">{{ City }}</span></h3>
         <div class="painting-details">
-          <p>{{ Paintings }}</p>
-          <br>
-          <p class="meta">
-            <b>Visit—</b>{{Date}} <a href="">Details</a>
-            <br>
+          <p class="painting-names">{{ Paintings }}</p>
+          <div class="painting-meta">
+            <p><b>Visit—</b>{{Date}} <a href="visits.html#">Details</a></p>
             {{#Notes}}
-            <span class="meta"><b>Notes—</b>{{Notes}}
+            <p><span class="painting-meta"><b>Notes—</b>{{Notes}}</p>
             {{/Notes}}
-          </p>
+          </div>
         </div>
       </div>
     </div>
