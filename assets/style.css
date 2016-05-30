@@ -106,6 +106,10 @@ ul.tall-lines li {
   display: inline-block;
 }
 
+.f-right {
+  float: right;
+}
+
 /*
    Nav
 */
@@ -144,8 +148,10 @@ footer h4 a {
   padding-bottom: 40px;
 }
 
-
-
-/*.painting-img {
-  float: right;
-}*/
+@media (max-width: 900px) {
+  .wrapper { width: 100%; padding: 0 10px; }
+  .half { display: block; width: 100%;}
+  .half + .half { margin-left: 0; }
+  .f-right { float: none; }
+  .painting-info { padding-top: 18px; }
+}

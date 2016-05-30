@@ -52,9 +52,12 @@
   <script id="paintings_template" type="text/html">
     {{#rows}}
     <div class="painting-container">
+      <div class="painting-img half f-right">
+        <img src="{{Photo}}">
+      </div>
+      
       <div class="painting-info half">
         <h3>{{ Location }} <span class="no-bold">{{ City }}</span></h3>
-
         <div class="painting-details">
           <p>{{ Paintings }}</p>
           <br>
@@ -66,9 +69,6 @@
             {{/Notes}}
           </p>
         </div>
-      </div>
-      <div class="painting-img half">
-        <img src="{{Photo}}">
       </div>
     </div>
     {{/rows}}
