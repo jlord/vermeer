@@ -86,7 +86,7 @@ var vermeers = [
  "Location": "Mauritshuis",
  "City": "The Hague, Netherlands",
  "Date": "5/9/2016",
- "Photo": "assets/imgs/dresden.jpg",
+ "Photo": "assets/imgs/mauritshuis.jpg",
  "Notes": ""
 },
 {
@@ -95,7 +95,7 @@ var vermeers = [
  "Location": "Rijksmuseum",
  "City": "Amsterdam, Netherlands",
  "Date": "5/10/2016",
- "Photo": "assets/imgs/rijks.jpg",
+ "Photo": "assets/imgs/rijks2.jpg",
  "Notes": "Little Street was on loan in the Delft, but this completes seeing each that the Rijksmuseum has."
  }
 ]
