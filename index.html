@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Visiting all the Vermeers">
+    <meta name="author" content="Jessica Lor">
     <title>Vermeer Goals</title>
     <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
     <!-- <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'> -->    <link rel="stylesheet" href="assets/style.css">
-    <script src="assets/local-data.json"></script>
+    <script src="assets/data.json"></script>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/sheetsee.js"></script>
   </head>
@@ -60,7 +60,7 @@
     {{#rows}}
     <div class="painting-container">
       <div class="painting-img most f-right">
-        <img src="{{Photo}}">
+        <img src="assets/imgs/{{Photo}}">
       </div>
 
       <div class="painting-info some">
@@ -68,6 +68,7 @@
         <div class="painting-details">
           <p class="painting-names">{{ Paintings }}</p>
           <div class="painting-meta">
+            // TODO Add back notes to spreadsheet
             <p><b>Visit—</b>{{Date}} <a href="visits.html#">Details</a></p>
             {{#Notes}}
             <p><span class="painting-meta"><b>Notes—</b>{{Notes}}</p>
@@ -80,8 +81,22 @@
   </script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      var html = Sheetsee.ich.paintings_template({'rows': vermeers})
+      var html = Sheetsee.ich.paintings_template({'rows': sortData(vermeers)})
       $('#paintings').html(html)
+
+      function sortData (data) {
+        // TODO This will fail if I
+        // visit two places in one day
+        var visits = []
+        var visitedDates = []
+         vermeers.forEach(function (visit) {
+          if (visit.Seen === "Y" && visitedDates.indexOf(visit.Date) === -1) {
+            visits.push(visit)
+            visitedDates.push(visit.Date)
+          }
+        })
+        return visits
+      }
     })
   </script>
 </html>
