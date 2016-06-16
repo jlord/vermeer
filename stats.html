@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Visiting all the Vermeers.">
+    <meta name="author" content="Jessica Lord, @jllord">
     <title>Vermeer Goals—Stats</title>
     <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
     <!-- <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>    --><link rel="stylesheet" href="assets/style.css">
@@ -40,6 +40,7 @@
           </div>
           <div class="most">
             <img src="assets/imgs/map.png">
+            <div id="map"></div>
           </div>
         </section>
 
@@ -59,4 +60,23 @@
     </footer>
 
   </body>
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var URL = "0Ao5u1U6KYND7dGN5QngweVJUWE16bTRob0d2a3dCbnc"
+        Tabletop.init( { key: URL, callback: showInfo, simpleSheet: true } )
+      })
+
+      function showInfo(data) {
+        var optionsJSON = ["placename", "photo-url"]
+        var template = "<ul><li><a href='{{photo-url}}' target='_blank'>"
+                     + "<img src='{{photo-url}}'></a></li>"
+                     + "<li><h4>{{placename}}</h4></li></ul>"
+        var geoJSON = Sheetsee.createGeoJSON(data, optionsJSON)
+        var map = Sheetsee.loadMap("map")
+        Sheetsee.addTileLayer(map, 'pk.eyJ1Ijoiamxsb3JkIiwiYSI6IkVwNUd4eWsifQ.dxpWPAYZle0eUvwXWGi8Cw')
+        Sheetsee.addMarkerLayer(geoJSON, map, template)
+      }
+
+      // https://api.mapbox.com/styles/v1/jllord/cipc2q2fg005bbdm6cnnf6gvr/tiles/{z}/{x}/{y}?access_token=pk.eyJ1Ijoiamxsb3JkIiwiYSI6IkVwNUd4eWsifQ.dxpWPAYZle0eUvwXWGi8Cw
+  </script>
 </html>
