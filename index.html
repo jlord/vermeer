@@ -81,22 +81,8 @@
   </script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      var html = Sheetsee.ich.paintings_template({'rows': sortData(vermeers)})
+      var html = Sheetsee.ich.paintings_template({'rows': vermeers})
       $('#paintings').html(html)
-
-      function sortData (data) {
-        // TODO This will fail if I
-        // visit two places in one day
-        var visits = []
-        var visitedDates = []
-         vermeers.forEach(function (visit) {
-          if (visit.Seen === "Y" && visitedDates.indexOf(visit.Date) === -1) {
-            visits.push(visit)
-            visitedDates.push(visit.Date)
-          }
-        })
-        return visits
-      }
     })
   </script>
 </html>
