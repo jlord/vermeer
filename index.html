@@ -68,7 +68,6 @@
         <div class="painting-details">
           <p class="painting-names">{{ Paintings }}</p>
           <div class="painting-meta">
-            // TODO Add back notes to spreadsheet
             <p><b>Visit—</b>{{Date}} <a href="visits.html#">Details</a></p>
             {{#Notes}}
             <p><span class="painting-meta"><b>Notes—</b>{{Notes}}</p>
@@ -87,10 +86,11 @@
       function sortData (data) {
         // TODO This will fail if I
         // visit two places in one day
+        // TODO Add back notes to spreadsheet
         var visits = []
         var visitedDates = []
          vermeers.forEach(function (visit) {
-          if (visit.Seen === "Y" && visitedDates.indexOf(visit.Date) === -1) {
+          if (visit.Seen === 'Y' && visitedDates.indexOf(visit.Date) === -1) {
             visits.push(visit)
             visitedDates.push(visit.Date)
           }
