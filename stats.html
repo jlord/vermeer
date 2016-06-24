@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Visiting all the Vermeers.">
     <meta name="author" content="Jessica Lord, @jllord">
-    <title>Vermeer Goals—Stats</title>
+    <title>Vermeer Goals</title>
     <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
     <!-- <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>    --><link rel="stylesheet" href="assets/style.css">
-    <script src="assets/local-data.json"></script>
+    <script src="assets/stats.json"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/sheetsee.js"></script>
   </head>
   <body>
     <header>
@@ -32,15 +34,17 @@
         </div>
 
         <div class="most">
-          <p>This fun page is not done yet!</p>
+          <!-- <p>Below are some of the numbers relevant for me as I've tried to see each of the Vermeers. I have a spreadsheet with some data which is used to make this page.</p> -->
+          <img src="assets/imgs/map.png">
         </div>
 
         <section>
           <div class="some">
+            <!-- <h2>Map</h2> -->
           </div>
           <div class="most">
-            <img src="assets/imgs/map.png">
-            <div id="map"></div>
+            <div id="stats"></div>
+            <small><b>Note</b> that because some of the paintings travel to other museums you may be able to see each in fewer countries and museums than if you'd seen them all in the permanent collections they belong to. For that reason I've not sown a total of countries or museums that will be visited. The total number of paintings, however—and of couse—is definite.</small>
           </div>
         </section>
 
@@ -59,24 +63,27 @@
       </div>
     </footer>
 
-  </body>
-  <script>
+    <script id="stats_template" type="text/html">
+      <h2>Remaining Vermeers: {{ stats.unseenNo }}*</h2>
+      <small>{{ stats.unseen }}</small>
+      <br><br>
+      <small><b>*</b> There are {{ stats.notPublicNo }} paintings that are not in permanent collections. One was <a href="">stolen from the Isabella Stewart Gardner Museum</a> and one is in a private collection, sometimes in exhbitions.</small>
+      <br>
+      <h4>Paintings: {{ stats.seenNo }} / {{ stats.allNo }}</h4>
+      <small>{{ stats.seen }}</small>
+      <h4>Countries: {{ stats.visitedCountriesNo }} / {{ stats.allCountriesNo }}</h4>
+      <small>{{ #stats }} {{ stats.visitedCountries }} {{ /stats }}</small>
+      <h4>Museums: {{ stats.visitedMuseumsNo }} / {{ stats.allMuseumsNo }}</h4>
+      <small>{{ stats.visitedMuseums }}</small>
+    </script>
+
+    <script>
       document.addEventListener('DOMContentLoaded', function() {
-        var URL = "0Ao5u1U6KYND7dGN5QngweVJUWE16bTRob0d2a3dCbnc"
-        Tabletop.init( { key: URL, callback: showInfo, simpleSheet: true } )
+        console.log(stats)
+        var html = Sheetsee.ich.stats_template({ stats })
+        $('#stats').html(html)
       })
+    </script>
 
-      function showInfo(data) {
-        var optionsJSON = ["placename", "photo-url"]
-        var template = "<ul><li><a href='{{photo-url}}' target='_blank'>"
-                     + "<img src='{{photo-url}}'></a></li>"
-                     + "<li><h4>{{placename}}</h4></li></ul>"
-        var geoJSON = Sheetsee.createGeoJSON(data, optionsJSON)
-        var map = Sheetsee.loadMap("map")
-        Sheetsee.addTileLayer(map, 'pk.eyJ1Ijoiamxsb3JkIiwiYSI6IkVwNUd4eWsifQ.dxpWPAYZle0eUvwXWGi8Cw')
-        Sheetsee.addMarkerLayer(geoJSON, map, template)
-      }
-
-      // https://api.mapbox.com/styles/v1/jllord/cipc2q2fg005bbdm6cnnf6gvr/tiles/{z}/{x}/{y}?access_token=pk.eyJ1Ijoiamxsb3JkIiwiYSI6IkVwNUd4eWsifQ.dxpWPAYZle0eUvwXWGi8Cw
-  </script>
+  </body>
 </html>
