@@ -44,6 +44,7 @@
           </div>
           <div class="most">
             <div id="stats"></div>
+            <br><br>
             <small><b>Note</b> that because some of the paintings travel to other museums you may be able to see each in fewer countries and museums than if you'd seen them all in the permanent collections they belong to. For that reason I've not sown a total of countries or museums that will be visited. The total number of paintings, however—and of couse—is definite.</small>
           </div>
         </section>
@@ -62,7 +63,7 @@
         </nav>
       </div>
     </footer>
-
+    <!-- TODO add and style remainder -->
     <script id="stats_template" type="text/html">
       <h2>Remaining Vermeers: {{ stats.unseenNo }}*</h2>
       <small>{{ stats.unseen }}</small>
@@ -72,7 +73,7 @@
       <h4>Paintings: {{ stats.seenNo }} / {{ stats.allNo }}</h4>
       <small>{{ stats.seen }}</small>
       <h4>Countries: {{ stats.visitedCountriesNo }} / {{ stats.allCountriesNo }}</h4>
-      <small>{{ #stats }} {{ stats.visitedCountries }} {{ /stats }}</small>
+      <small>{{ stats.visitedCountries }}</small>
       <h4>Museums: {{ stats.visitedMuseumsNo }} / {{ stats.allMuseumsNo }}</h4>
       <small>{{ stats.visitedMuseums }}</small>
     </script>
