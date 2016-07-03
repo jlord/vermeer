@@ -1,45 +1,55 @@
 var stats = {
  "visitedCountries": [
+  "France",
+  "United States",
   "Germany",
   "England",
-  "Netherlands",
-  "France",
-  "United States"
+  "Netherlands"
  ],
  "visitedCountriesNo": 5,
  "allCountries": [
-  "Germany",
-  "England",
-  "Netherlands",
   "France",
   "United States",
-  "Austria"
+  "Germany",
+  "England",
+  "Netherlands"
  ],
- "allCountriesNo": 6,
- "CountriesDelta": [
-  "Austria"
- ],
+ "allCountriesNo": 5,
+ "CountriesRemaining": [],
  "visitedMuseums": [
+  "Musée du Louvre",
+  "National Gallery of Art, USA",
+  "Gemäldegalerie Alte Meister",
   "Gemäldegalerie Alte Meister",
   "Kenwood House",
   "Mauritshuis",
-  "Musée du Louvre",
+  "Mauritshuis",
+  "Mauritshuis",
   "National Gallery, England",
-  "National Gallery of Art, USA",
+  "National Gallery, England",
+  "Rijksmuseum",
+  "Rijksmuseum",
+  "Rijksmuseum",
   "Rijksmuseum",
   "Gemäldegalerie, Berlin",
+  "Gemäldegalerie, Berlin",
   "The Frick Collection",
+  "The Frick Collection",
+  "The Frick Collection",
+  "The Metropolitan Museum of Art",
+  "The Metropolitan Museum of Art",
+  "The Metropolitan Museum of Art",
   "The Metropolitan Museum of Art",
   "The Queen's Gallery"
  ],
- "visitedMuseumsNo": 11,
+ "visitedMuseumsNo": 24,
  "allMuseums": [
+  "Musée du Louvre",
+  "National Gallery of Art, USA",
   "Gemäldegalerie Alte Meister",
   "Kenwood House",
   "Mauritshuis",
-  "Musée du Louvre",
   "National Gallery, England",
-  "National Gallery of Art, USA",
   "Rijksmuseum",
   "Gemäldegalerie, Berlin",
   "The Frick Collection",
@@ -54,7 +64,7 @@ var stats = {
   "Städelsches Kunstinstitut"
  ],
  "allMuseumsNo": 18,
- "museumDelta": [
+ "museumRemaining": [
   "Herzog Anton Ulrich-Museum",
   "Kunsthistorisches Museum",
   "National Gallery of Ireland",
@@ -62,16 +72,16 @@ var stats = {
   "Städelsches Kunstinstitut"
  ],
  "visible": [
+  "The Astronomer",
+  "A Lady Writing",
   "The Procuress",
   "A Girl Reading a Letter by an Open Window",
   "The Guitar Player",
   "Diana and her Companions",
   "View of Delft",
   "Girl with a Pearl Earring",
-  "The Astronomer",
   "A Lady Standing at a Virginal",
   "A Lady Seated at a Virginal",
-  "A Lady Writing",
   "The Little Street",
   "The Milkmaid",
   "The Love Letter",
@@ -99,16 +109,16 @@ var stats = {
  ],
  "visibleNo": 34,
  "all": [
+  "The Astronomer",
+  "A Lady Writing",
   "The Procuress",
   "A Girl Reading a Letter by an Open Window",
   "The Guitar Player",
   "Diana and her Companions",
   "View of Delft",
   "Girl with a Pearl Earring",
-  "The Astronomer",
   "A Lady Standing at a Virginal",
   "A Lady Seated at a Virginal",
-  "A Lady Writing",
   "The Little Street",
   "The Milkmaid",
   "The Love Letter",
@@ -143,16 +153,16 @@ var stats = {
  ],
  "notPublicNo": 2,
  "seen": [
+  "The Astronomer",
+  "A Lady Writing",
   "The Procuress",
   "A Girl Reading a Letter by an Open Window",
   "The Guitar Player",
   "Diana and her Companions",
   "View of Delft",
   "Girl with a Pearl Earring",
-  "The Astronomer",
   "A Lady Standing at a Virginal",
   "A Lady Seated at a Virginal",
-  "A Lady Writing",
   "The Little Street",
   "The Milkmaid",
   "The Love Letter",
@@ -169,7 +179,7 @@ var stats = {
   "The Music Lesson"
  ],
  "seenNo": 24,
- "unseen": [
+ "remaining": [
   "The Concert",
   "A Young Woman Seated at the Virginals",
   "The Girl with a Glass of Wine",
@@ -183,5 +193,5 @@ var stats = {
   "The Geographer",
   "Young Woman with a Water Pitcher"
  ],
- "unseenNo": 10
+ "reminingNo": 10
 }
