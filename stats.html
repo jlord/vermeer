@@ -66,16 +66,16 @@
     <!-- TODO add and style remainder -->
     <!-- TODO get spaces in array -->
     <script id="stats_template" type="text/html">
-      <h2>Remaining Vermeers: {{ stats.unseenNo }}</h2>
+      <h2>Remaining Vermeers: {{ stats.unseenLength }}</h2>
       <small>{{ stats.unseen }}</small>
       <br><br>
-      <h4>Paintings: {{ stats.seenNo }} / {{ stats.allNo }}</h4>
+      <h4>Paintings: {{ stats.seenLength }} / {{ stats.allLength }}</h4>
       <small>{{ stats.seen }}</small>
       <br><br>
-      <small><b>Note</b> There are {{ stats.notPublicNo }} paintings that are not in permanent collections. I'm not counting these in the total. One was <a href="">stolen from the Isabella Stewart Gardner Museum</a> and one is in a private collection, sometimes in exhbitions.</small>
-      <h4>Countries: {{ stats.visitedCountriesNo }}</h4>
+      <small><b>Note</b> There are {{ stats.notPublicLength }} paintings that are not in permanent collections. I'm not counting these in the total. One was <a href="">stolen from the Isabella Stewart Gardner Museum</a> and one is in a private collection, sometimes in exhbitions.</small>
+      <h4>Countries: {{ stats.visitedCountriesLength }}</h4>
       <small>{{ stats.visitedCountries }}</small>
-      <h4>Museums: {{ stats.visitedMuseumsNo }}</h4>
+      <h4>Museums: {{ stats.visitedMuseumsLength }}</h4>
       <small>{{ stats.visitedMuseums }}</small>
     </script>
 

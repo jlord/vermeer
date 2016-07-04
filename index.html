@@ -60,20 +60,20 @@
     {{#rows}}
     <div class="painting-container">
       <div class="painting-img most f-right">
-        <img src="assets/imgs/{{Photo}}" alt="Photo of {{Location}}">
+        <img src="assets/imgs/{{ photo }}" alt="Photo of {{ location }}">
       </div>
 
       <div class="painting-info some">
         <!-- TODO: Probably should handle this with if statements so data doesn't
         have so many duplicate entries -->
-        <h3>{{ Exhibition Location }} <span class="no-bold force-wrap">{{ Exhibition City }}</span></h3>
+        <h3>{{ exhibitionLocation }} <span class="no-bold force-wrap">{{ exhibitionCity }}</span></h3>
         <div class="painting-details">
-          <p class="painting-names">{{ Paintings }}</p>
+          <p class="painting-names">{{ name }}</p>
           <div class="painting-meta">
-            <p><b>Visit—</b>{{Date}} <a href="visits.html#">Details</a></p>
-            {{#Notes}}
-            <p><span class="painting-meta"><b>Notes—</b>{{Notes}}</p>
-            {{/Notes}}
+            <p><b>Visit—</b>{{ date }} <a href="visits.html#">Details</a></p>
+            {{#notes}}
+            <p><span class="painting-meta"><b>Notes—</b>{{ notes }}</p>
+            {{/notes}}
           </div>
         </div>
       </div>
@@ -91,10 +91,10 @@
         // visit two places in one day
         var visits = []
         var visitedDates = []
-         vermeers.forEach(function (visit) {
-          if (visit.Seen === 'Y' && visitedDates.indexOf(visit.Date) === -1) {
+         data.forEach(function (visit) {
+          if (visit.seen && visitedDates.indexOf(visit.date) === -1) {
             visits.push(visit)
-            visitedDates.push(visit.Date)
+            visitedDates.push(visit.date)
           }
         })
         return visits
