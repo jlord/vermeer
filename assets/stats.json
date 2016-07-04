@@ -1,77 +1,45 @@
 var stats = {
  "visitedCountries": [
-  "France",
   "United States",
   "Germany",
   "England",
   "Netherlands"
  ],
- "visitedCountriesNo": 5,
- "allCountries": [
-  "France",
-  "United States",
+ "visitedCountriesLength": 4,
+ "remainingCountries": [
   "Germany",
-  "England",
-  "Netherlands"
+  "Austria",
+  "France",
+  "USA",
+  "Ireland",
+  "Scotland"
  ],
- "allCountriesNo": 5,
- "CountriesRemaining": [],
+ "remainingCountriesLength": 6,
  "visitedMuseums": [
-  "Musée du Louvre",
-  "National Gallery of Art, USA",
-  "Gemäldegalerie Alte Meister",
+  "Boston Museum of Fine Arts",
   "Gemäldegalerie Alte Meister",
   "Kenwood House",
   "Mauritshuis",
-  "Mauritshuis",
-  "Mauritshuis",
-  "National Gallery, England",
   "National Gallery, England",
   "Rijksmuseum",
-  "Rijksmuseum",
-  "Rijksmuseum",
-  "Rijksmuseum",
-  "Gemäldegalerie, Berlin",
   "Gemäldegalerie, Berlin",
   "The Frick Collection",
-  "The Frick Collection",
-  "The Frick Collection",
-  "The Metropolitan Museum of Art",
-  "The Metropolitan Museum of Art",
-  "The Metropolitan Museum of Art",
   "The Metropolitan Museum of Art",
   "The Queen's Gallery"
  ],
- "visitedMuseumsNo": 24,
- "allMuseums": [
+ "visitedMuseumsLength": 10,
+ "remainingMuseums": [
+  "Herzog Anton Ulrich-Museum",
+  "Kunsthistorisches Museum",
   "Musée du Louvre",
   "National Gallery of Art, USA",
-  "Gemäldegalerie Alte Meister",
-  "Kenwood House",
-  "Mauritshuis",
-  "National Gallery, England",
-  "Rijksmuseum",
-  "Gemäldegalerie, Berlin",
-  "The Frick Collection",
-  "The Metropolitan Museum of Art",
-  "The Queen's Gallery",
-  "Isabella Stewart Gardner",
-  "Private Collection",
-  "Herzog Anton Ulrich-Museum",
-  "Kunsthistorisches Museum",
   "National Gallery of Ireland",
   "National Gallery Scotland",
-  "Städelsches Kunstinstitut"
+  "Städelsches Kunstinstitut",
+  "The Metropolitan Museum of Art"
  ],
- "allMuseumsNo": 18,
- "museumRemaining": [
-  "Herzog Anton Ulrich-Museum",
-  "Kunsthistorisches Museum",
-  "National Gallery of Ireland",
-  "National Gallery Scotland",
-  "Städelsches Kunstinstitut"
- ],
- "visible": [
+ "remainingMuseumsLength": 8,
+ "public": [
   "The Astronomer",
   "A Lady Writing",
   "The Procuress",
@@ -107,7 +75,7 @@ var stats = {
   "The Geographer",
   "Young Woman with a Water Pitcher"
  ],
- "visibleNo": 34,
+ "publicNo": 34,
  "all": [
   "The Astronomer",
   "A Lady Writing",
@@ -133,8 +101,6 @@ var stats = {
   "Study of a Young Woman",
   "Allegory of Faith",
   "The Music Lesson",
-  "The Concert",
-  "A Young Woman Seated at the Virginals",
   "The Girl with a Glass of Wine",
   "The Art of Painting",
   "The Lacemaker",
@@ -144,14 +110,16 @@ var stats = {
   "Lady Writing a Letter with her Maid",
   "Christ in the House of Martha and Mary",
   "The Geographer",
-  "Young Woman with a Water Pitcher"
+  "Young Woman with a Water Pitcher",
+  "The Concert",
+  "A Young Woman Seated at the Virginals"
  ],
- "allNo": 36,
+ "allLength": 36,
  "notPublic": [
   "The Concert",
   "A Young Woman Seated at the Virginals"
  ],
- "notPublicNo": 2,
+ "notPublicLength": 2,
  "seen": [
   "The Astronomer",
   "A Lady Writing",
@@ -178,7 +146,7 @@ var stats = {
   "Allegory of Faith",
   "The Music Lesson"
  ],
- "seenNo": 24,
+ "seenLength": 24,
  "remaining": [
   "The Concert",
   "A Young Woman Seated at the Virginals",
@@ -193,5 +161,6 @@ var stats = {
   "The Geographer",
   "Young Woman with a Water Pitcher"
  ],
- "reminingNo": 10
+ "remainingLength": 12,
+ "remainingPublicLength": 10
 }
