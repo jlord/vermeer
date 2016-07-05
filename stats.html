@@ -29,25 +29,21 @@
 
     <main>
       <div class="wrapper" id="about">
-        <div class="some">
+        <!-- <div class="some">
           <h2>Stats</h2>
         </div>
 
         <div class="most">
-          <!-- <p>Below are some of the numbers relevant for me as I've tried to see each of the Vermeers. I have a spreadsheet with some data which is used to make this page.</p> -->
+          <p>Below are some of the numbers relevant for me as I've tried to see each of the Vermeers. I have a spreadsheet with some data which is used to make this page.</p>
           <img src="assets/imgs/map.png">
-        </div>
+        </div> -->
 
-        <section>
           <div class="some">
-            <!-- <h2>Map</h2> -->
+            <h2>Stats</h2>
           </div>
           <div class="most">
             <div id="stats"></div>
-            <br><br>
-            <small><b>Note</b> that because some of the paintings travel to other museums you may be able to see each in fewer countries and museums than if you'd seen them all in the permanent collections they belong to. For that reason I've not sown a total of countries or museums that will be visited. The total number of paintings, however—and of couse—is definite.</small>
           </div>
-        </section>
 
     </main>
 
@@ -66,22 +62,26 @@
     <!-- TODO add and style remainder -->
     <!-- TODO get spaces in array -->
     <script id="stats_template" type="text/html">
-      <h2>Remaining Vermeers: {{ stats.unseenLength }}</h2>
-      <small>{{ stats.unseen }}</small>
-      <br><br>
-      <h4>Paintings: {{ stats.seenLength }} / {{ stats.allLength }}</h4>
-      <small>{{ stats.seen }}</small>
-      <br><br>
+      <h1 class="leading-number">{{ stats.seenLength }}</h1>
+      <p><b>Vermeers seen:</b>{{stats.seenFormatted}} <em><span class="lighter-body"><b>{{ stats.remainingLength }} remaining to see:</b> {{ stats.remainingFormatted }}.</span></em></p>
       <small><b>Note</b> There are {{ stats.notPublicLength }} paintings that are not in permanent collections. I'm not counting these in the total. One was <a href="">stolen from the Isabella Stewart Gardner Museum</a> and one is in a private collection, sometimes in exhbitions.</small>
-      <h4>Countries: {{ stats.visitedCountriesLength }}</h4>
-      <small>{{ stats.visitedCountries }}</small>
-      <h4>Museums: {{ stats.visitedMuseumsLength }}</h4>
-      <small>{{ stats.visitedMuseums }}</small>
+      <br><br>
+      <!-- <img src="assets/imgs/map.png"> -->
+      <h4 class="secondary-number">{{ stats.visitedCountriesLength }}</h4>
+      <p><b>Countries visited:</b> {{ stats.visitedCountriesFormatted }} <em><span class="lighter-body"><b>Countries remaining: </b>{{ stats.remainingCountriesFormatted }}.</span></em></p>
+      <h4 class="secondary-number">{{ stats.visitedMuseumsLength }}</h4>
+      <p><b>Museums visited:</b> {{ stats.visitedMuseumsFormatted }} <em><span class="lighter-body"><b>Museums remaining: </b>{{ stats.remainingMuseumsFormatted }}.</span></em></p>
+      <small><b>Note</b> that because some of the paintings travel to other museums you may be able to see each in fewer countries and museums than if you'd seen them all in the permanent collections they belong to. For that reason I've not sown a total of countries or museums that will be visited. The total number of paintings, however—and of couse—is definite.</small>
     </script>
 
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-        console.log(stats)
+        stats.seenFormatted = stats.seen.join(', ')
+        stats.remainingFormatted = stats.remaining.join(', ')
+        stats.visitedCountriesFormatted = stats.visitedCountries.join(', ')
+        stats.remainingCountriesFormatted = stats.remainingCountries.join(', ')
+        stats.visitedMuseumsFormatted = stats.visitedMuseums.join(', ')
+        stats.remainingMuseumsFormatted = stats.remainingMuseums.join(', ')
         var html = Sheetsee.ich.stats_template({ stats })
         $('#stats').html(html)
       })

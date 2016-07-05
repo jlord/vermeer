@@ -195,6 +195,24 @@ footer h4 a {
   margin-top: 0;
 }
 
+/* Stats Page */
+
+.leading-number {
+  font-size: 6em;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.secondary-number {
+  font-size: 4em;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.lighter-body {
+  color: #6f7586;
+}
+
 @media (max-width: 900px) {
   .wrapper { width: 100%; padding: 0 10px; }
   .most, .some { display: block; width: 100%;}
