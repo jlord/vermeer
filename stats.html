@@ -98,12 +98,14 @@
         <div class="painting-box"></div>
         <div class="painting-box"></div>
         <div class="painting-box"></div>
+        <div class="painting-box cant-see-box"></div>
+        <div class="painting-box cant-see-box"></div>
       </div>
       <br><br>
       <p>{{stats.seenFormatted}}</p>
-      <h4 class="lighter-body">{{ stats.remainingLength }} Remaining</h4>
+      <h4 class="lighter-body">{{ stats.remainingPublicLength }} Remaining</h4>
       <p><span class="lighter-body">{{ stats.remainingFormatted }}.</span></p>
-      <small><b>Note</b> There are {{ stats.notPublicLength }} paintings that are not in permanent collections. I'm not counting these in the total. One was <a href="">stolen from the Isabella Stewart Gardner Museum</a> and one is in a private collection, sometimes in exhbitions.</small>
+      <small><b>Note</b> Really there are 10 more—{{ stats.notPublicLength }} paintings are not in permanent collections. One was <a href="">stolen from the Isabella Stewart Gardner Museum</a> and one is in a private collection, sometimes in exhbitions.</small>
       <br><br>
       <img src="assets/imgs/map.png">
       <h3 class="secondary-number">{{ stats.visitedCountriesLength }}</h3>
@@ -122,7 +124,7 @@
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         stats.seenFormatted = stats.seen.join(', ')
-        stats.remainingFormatted = stats.remaining.join(', ')
+        stats.remainingFormatted = stats.public.join(', ')
         stats.visitedCountriesFormatted = stats.visitedCountries.join(', ')
         stats.remainingCountriesFormatted = stats.remainingCountries.join(', ')
         stats.visitedMuseumsFormatted = stats.visitedMuseums.join(', ')

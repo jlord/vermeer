@@ -222,12 +222,16 @@ footer h4 a {
 }
 
 .painting-box {
-  width: 28px;
-  height: 38px;
+  width: 26px;
+  height: 36px;
   background: #6f7586;
   display: inline-block;
 }
 
 .painting-box.seen-box {
   background: #2b334d;
+}
+
+.painting-box.cant-see-box {
+  background: #b9bfc1;
 }
