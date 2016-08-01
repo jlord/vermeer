@@ -187,7 +187,8 @@ footer h4 a {
   margin-left: 23px;
 }
 
-.some h2:first-of-type {
+.some h2:first-of-type,
+.some h3:first-of-type {
   margin-top: 0;
 }
 
