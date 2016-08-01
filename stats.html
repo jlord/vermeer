@@ -7,8 +7,9 @@
     <meta name="description" content="Visiting all the Vermeers.">
     <meta name="author" content="Jessica Lord, @jllord">
     <title>Vermeer Goals</title>
-    <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
-    <!-- <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>    --><link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/style.css">
     <script src="assets/stats.json"></script>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/sheetsee.js"></script>
@@ -33,7 +34,10 @@
           <h2>Stats</h2>
         </div>
         <div class="most">
-          <div id="stats"></div>
+          <div id="stats" class="divider-line"></div>
+          <small><b>*</b> Two paintings are not in permanent collections. One was <a href="https://en.wikipedia.org/wiki/Isabella_Stewart_Gardner_Museum_theft" target="_blank">stolen from the Isabella Stewart Gardner Museum</a> and one is in a private collection, sometimes in exhbitions.</small>
+          <br><br>
+          <small><b>**</b> Because some of the paintings travel to other museums for exhibitions, I may see some outside of the museums and permanent collections to which they belong.</small>
         </div>
       </div>
     </main>
@@ -50,11 +54,11 @@
         </nav>
       </div>
     </footer>
-    <!-- TODO use left column -->
+
     <script id="stats_template" type="text/html">
       <h1 class="leading-number">{{ stats.seenLength }}</h1>
       <h2>Vermeers Visited</h2>
-      <!-- TODO Generate this with photo names and seen status -->
+      <!-- TODO Generate this with painting names and seen status -->
       <div class="painting-boxes">
         <div class="painting-box seen-box"></div>
         <div class="painting-box seen-box"></div>
@@ -96,11 +100,11 @@
       <br><br>
       <p>{{stats.seenFormatted}}</p>
       <h4 class="lighter-body">{{ stats.remainingPublicLength }} Remaining</h4>
-      <p><span class="lighter-body">{{ stats.remainingFormatted }}.</span></p>
+      <p><span class="lighter-body">{{ stats.remainingFormatted }}</span></p>
       <h4 class="even-lighter-body">{{ stats.notPublicLength }} Not Public*</h4>
-      <p><span class="even-lighter-body">{{ stats.notPublicFormatted }}.</span></p>
-      <!-- <img src="assets/imgs/map.png"> -->
+      <p><span class="even-lighter-body">{{ stats.notPublicFormatted }}</span></p>
       <h3 class="secondary-number">{{ stats.visitedCountriesLength }}</h3>
+      <!--  TODO a map! -->
       <h2>Countries Visited</h2>
       <p>{{ stats.visitedCountriesFormatted }}</p>
       <h4 class="lighter-body">Countries Remaining**</h4>
@@ -109,10 +113,7 @@
       <h2>Museums Visited</h2>
       <p>{{ stats.visitedMuseumsFormatted }}</p>
       <h4 class="lighter-body">Museums Remaining**</h4>
-      <p class="divider-line"><span class="lighter-body">{{ stats.remainingMuseumsFormatted }}</span></p>
-      <small><b>*</b> Two paintings are not in permanent collections. One was <a href="https://en.wikipedia.org/wiki/Isabella_Stewart_Gardner_Museum_theft" target="_blank">stolen from the Isabella Stewart Gardner Museum</a> and one is in a private collection, sometimes in exhbitions.</small>
-      <br><br>
-      <small><b>**</b> Because some of the paintings travel to other museums you may be able to see each in fewer countries and museums than if you'd seen them all in the permanent collections they belong to. For that reason I've not sown a total of countries or museums that will be visited.</small>
+      <p><span class="lighter-body">{{ stats.remainingMuseumsFormatted }}</span></p>
     </script>
 
     <script>
@@ -126,10 +127,7 @@
         stats.remainingMuseumsFormatted = stats.remainingMuseums.join(', ')
         var html = Sheetsee.ich.stats_template({ stats })
         $('#stats').html(html)
-
-        // Draw paintings
       })
     </script>
-
   </body>
 </html>
