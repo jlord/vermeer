@@ -56,7 +56,7 @@ h1 {
 
 /* TODO */
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
   font-family: "Merriweather";
   font-weight: 800;
 }
@@ -192,12 +192,35 @@ footer h4 a {
   margin-left: 23px;
 }
 
-.some h2:first-of-type {
+.some h2:first-of-type,
+.some h3:first-of-type {
   margin-top: 0;
 }
 
 .most p:first-of-type {
   margin-top: 0;
+}
+
+/* Stats Page */
+
+.leading-number {
+  font-size: 6em;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.secondary-number {
+  font-size: 4em;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.lighter-body {
+  color: #6f7586;
+}
+
+.even-lighter-body {
+  color: #929292;
 }
 
 @media (max-width: 900px) {
@@ -206,4 +229,19 @@ footer h4 a {
   .some + .most { margin-left: 0; }
   .f-right { float: none; }
   .painting-info { padding-top: 18px; }
+}
+
+.painting-box {
+  width: 26px;
+  height: 36px;
+  background: #6f7586;
+  display: inline-block;
+}
+
+.painting-box.seen-box {
+  background: #2b334d;
+}
+
+.painting-box.cant-see-box {
+  background: #929292;
 }

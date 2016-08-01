@@ -1,77 +1,55 @@
 var stats = {
  "visitedCountries": [
-  "Germany",
-  "England",
-  "Netherlands",
-  "France",
-  "United States"
- ],
- "visitedCountriesNo": 5,
- "allCountries": [
-  "Germany",
-  "England",
-  "Netherlands",
-  "France",
   "United States",
-  "Austria"
+  "Germany",
+  "England",
+  "Netherlands"
  ],
- "allCountriesNo": 6,
- "CountriesDelta": [
-  "Austria"
+ "visitedCountriesLength": 4,
+ "remainingCountries": [
+  "Germany",
+  "Austria",
+  "France",
+  "USA",
+  "Ireland",
+  "Scotland"
  ],
+ "remainingCountriesLength": 6,
  "visitedMuseums": [
+  "Boston Museum of Fine Arts",
   "Gemäldegalerie Alte Meister",
   "Kenwood House",
   "Mauritshuis",
-  "Musée du Louvre",
   "National Gallery, England",
-  "National Gallery of Art, USA",
   "Rijksmuseum",
   "Gemäldegalerie, Berlin",
   "The Frick Collection",
   "The Metropolitan Museum of Art",
   "The Queen's Gallery"
  ],
- "visitedMuseumsNo": 11,
- "allMuseums": [
-  "Gemäldegalerie Alte Meister",
-  "Kenwood House",
-  "Mauritshuis",
+ "visitedMuseumsLength": 10,
+ "remainingMuseums": [
+  "Herzog Anton Ulrich-Museum",
+  "Kunsthistorisches Museum",
   "Musée du Louvre",
-  "National Gallery, England",
   "National Gallery of Art, USA",
-  "Rijksmuseum",
-  "Gemäldegalerie, Berlin",
-  "The Frick Collection",
-  "The Metropolitan Museum of Art",
-  "The Queen's Gallery",
-  "Isabella Stewart Gardner",
-  "Private Collection",
-  "Herzog Anton Ulrich-Museum",
-  "Kunsthistorisches Museum",
   "National Gallery of Ireland",
   "National Gallery Scotland",
-  "Städelsches Kunstinstitut"
+  "Städelsches Kunstinstitut",
+  "The Metropolitan Museum of Art"
  ],
- "allMuseumsNo": 18,
- "museumDelta": [
-  "Herzog Anton Ulrich-Museum",
-  "Kunsthistorisches Museum",
-  "National Gallery of Ireland",
-  "National Gallery Scotland",
-  "Städelsches Kunstinstitut"
- ],
- "visible": [
+ "remainingMuseumsLength": 8,
+ "public": [
+  "The Astronomer",
+  "A Lady Writing",
   "The Procuress",
   "A Girl Reading a Letter by an Open Window",
   "The Guitar Player",
   "Diana and her Companions",
   "View of Delft",
   "Girl with a Pearl Earring",
-  "The Astronomer",
   "A Lady Standing at a Virginal",
   "A Lady Seated at a Virginal",
-  "A Lady Writing",
   "The Little Street",
   "The Milkmaid",
   "The Love Letter",
@@ -97,18 +75,18 @@ var stats = {
   "The Geographer",
   "Young Woman with a Water Pitcher"
  ],
- "visibleNo": 34,
+ "publicNo": 34,
  "all": [
+  "The Astronomer",
+  "A Lady Writing",
   "The Procuress",
   "A Girl Reading a Letter by an Open Window",
   "The Guitar Player",
   "Diana and her Companions",
   "View of Delft",
   "Girl with a Pearl Earring",
-  "The Astronomer",
   "A Lady Standing at a Virginal",
   "A Lady Seated at a Virginal",
-  "A Lady Writing",
   "The Little Street",
   "The Milkmaid",
   "The Love Letter",
@@ -123,8 +101,6 @@ var stats = {
   "Study of a Young Woman",
   "Allegory of Faith",
   "The Music Lesson",
-  "The Concert",
-  "A Young Woman Seated at the Virginals",
   "The Girl with a Glass of Wine",
   "The Art of Painting",
   "The Lacemaker",
@@ -134,25 +110,27 @@ var stats = {
   "Lady Writing a Letter with her Maid",
   "Christ in the House of Martha and Mary",
   "The Geographer",
-  "Young Woman with a Water Pitcher"
+  "Young Woman with a Water Pitcher",
+  "The Concert",
+  "A Young Woman Seated at the Virginals"
  ],
- "allNo": 36,
+ "allLength": 36,
  "notPublic": [
   "The Concert",
   "A Young Woman Seated at the Virginals"
  ],
- "notPublicNo": 2,
+ "notPublicLength": 2,
  "seen": [
+  "The Astronomer",
+  "A Lady Writing",
   "The Procuress",
   "A Girl Reading a Letter by an Open Window",
   "The Guitar Player",
   "Diana and her Companions",
   "View of Delft",
   "Girl with a Pearl Earring",
-  "The Astronomer",
   "A Lady Standing at a Virginal",
   "A Lady Seated at a Virginal",
-  "A Lady Writing",
   "The Little Street",
   "The Milkmaid",
   "The Love Letter",
@@ -168,8 +146,8 @@ var stats = {
   "Allegory of Faith",
   "The Music Lesson"
  ],
- "seenNo": 24,
- "unseen": [
+ "seenLength": 24,
+ "remaining": [
   "The Concert",
   "A Young Woman Seated at the Virginals",
   "The Girl with a Glass of Wine",
@@ -183,5 +161,6 @@ var stats = {
   "The Geographer",
   "Young Woman with a Water Pitcher"
  ],
- "unseenNo": 10
+ "remainingLength": 12,
+ "remainingPublicLength": 10
 }

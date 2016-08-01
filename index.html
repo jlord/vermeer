@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Visiting all the Vermeers">
-    <meta name="author" content="Jessica Lor">
+    <meta name="author" content="Jessica Lord">
     <title>Vermeer Goals</title>
-    <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
-    <!-- <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'> -->    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/style.css">
     <script src="assets/data.json"></script>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/sheetsee.js"></script>
@@ -53,48 +54,69 @@
         </nav>
       </div>
     </footer>
-
   </body>
 
   <script id="paintings_template" type="text/html">
     {{#rows}}
     <div class="painting-container">
       <div class="painting-img most f-right">
-        <img src="assets/imgs/{{Photo}}" alt="Photo of {{Location}}">
+        <img src="assets/imgs/{{ photo }}" alt="Photo of {{ location }}">
       </div>
 
       <div class="painting-info some">
-        <h3>{{ Exhibition Location }} <span class="no-bold force-wrap">{{ Exhibition City }}</span></h3>
+        <h3>{{ exhibitionLocation }} <span class="no-bold force-wrap">{{ exhibitionCity }}, {{ exhibitionCountry }}</span></h3>
         <div class="painting-details">
-          <p class="painting-names">{{ Paintings }}</p>
+          <p class="painting-names">{{ paintingsFormatted }}</p>
           <div class="painting-meta">
-            <p><b>Visit—</b>{{Date}} <a href="visits.html#">Details</a></p>
-            {{#Notes}}
-            <p><span class="painting-meta"><b>Notes—</b>{{Notes}}</p>
-            {{/Notes}}
+            <!--  TODO link to museum id on visits page-->
+            <p><b>Visit—</b>{{ date }} <a href="visits.html#">Details</a></p>
+            {{#notes}}
+            <p><span class="painting-meta"><b>Notes—</b>{{ notes }}</p>
+            {{/notes}}
           </div>
         </div>
       </div>
     </div>
     {{/rows}}
   </script>
+
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      var html = Sheetsee.ich.paintings_template({'rows': sortData(vermeers)})
+      var html = Sheetsee.ich.paintings_template({ 'rows': sortData(vermeers) })
       $('#paintings').html(html)
 
       function sortData (data) {
-        console.log(data)
+        // This takes the data, which is for every painting, and
+        // sorts it by each visit and all the paintings seen at that time
+
         // TODO This will fail if I
         // visit two places in one day
         var visits = []
+        var visitsObj = {}
         var visitedDates = []
-         vermeers.forEach(function (visit) {
-          if (visit.Seen === 'Y' && visitedDates.indexOf(visit.Date) === -1) {
-            visits.push(visit)
-            visitedDates.push(visit.Date)
+         data.forEach(function (visit) {
+          if (!visit.seen) return
+          if (visitedDates.indexOf(visit.date) === -1) {
+            visitedDates.push(visit.date)
+            // TODO this feels really redundant
+            visitsObj[visit.date] = {
+              'paintings': [visit.name],
+              'paintingsFormatted': visit.name,
+              'exhibitionLocation': visit.exhibitionLocation,
+              'exhibitionCity': visit.exhibitionCity,
+              'exhibitionCountry': visit.exhibitionCountry,
+              'notes': visit.notes,
+              'date': visit.date,
+              'photo': visit.photo
+            }
+          } else {
+            visitsObj[visit.date].paintings.push(visit.name)
+            visitsObj[visit.date].paintingsFormatted += ', ' + visit.name
           }
         })
+
+        for (visit in visitsObj) { visits.push(visitsObj[visit]) }
+
         return visits
       }
     })
