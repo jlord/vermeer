@@ -66,13 +66,16 @@ function getVisible (data) {
 function getSeen (data) {
   var seen = []
   var remaining = []
+  var remainingPublic = []
   data.forEach(function (piece) {
+    if (!piece.seen && piece.public) remainingPublic.push(piece.name)
     if (piece.seen) seen.push(piece.name)
     else remaining.push(piece.name)
   })
   stats.seen = seen
   stats.seenLength = seen.length
   stats.remaining = remaining
+  stats.remainingPublic = remainingPublic
   stats.remainingLength = remaining.length
   stats.remainingPublicLength = remaining.length - 2 // minus not public pieces
 }

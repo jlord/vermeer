@@ -161,6 +161,18 @@ var stats = {
   "The Geographer",
   "Young Woman with a Water Pitcher"
  ],
+ "remainingPublic": [
+  "The Girl with a Glass of Wine",
+  "The Art of Painting",
+  "The Lacemaker",
+  "Woman Holding a Balance",
+  "Girl with a Red Hat",
+  "Girl with a Flute",
+  "Lady Writing a Letter with her Maid",
+  "Christ in the House of Martha and Mary",
+  "The Geographer",
+  "Young Woman with a Water Pitcher"
+ ],
  "remainingLength": 12,
  "remainingPublicLength": 10
 }
