@@ -213,6 +213,10 @@ footer h4 a {
   color: #6f7586;
 }
 
+.even-lighter-body {
+  color: #929292;
+}
+
 @media (max-width: 900px) {
   .wrapper { width: 100%; padding: 0 10px; }
   .most, .some { display: block; width: 100%;}
@@ -233,5 +237,5 @@ footer h4 a {
 }
 
 .painting-box.cant-see-box {
-  background: #b9bfc1;
+  background: #929292;
 }
