@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "data": "node assets/js/index.js "
+    "data": "node assets/js/index.js",
+    "stats": "node assets/js/assess-data.js"
   },
   "repository": {
     "type": "git",
