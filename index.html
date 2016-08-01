@@ -54,7 +54,6 @@
         </nav>
       </div>
     </footer>
-
   </body>
 
   <script id="paintings_template" type="text/html">
@@ -65,12 +64,11 @@
       </div>
 
       <div class="painting-info some">
-        <!-- TODO: Probably should handle this with if statements so data doesn't
-        have so many duplicate entries -->
-        <h3>{{ exhibitionLocation }} <span class="no-bold force-wrap">{{ exhibitionCity }}</span></h3>
+        <h3>{{ exhibitionLocation }} <span class="no-bold force-wrap">{{ exhibitionCity }}, {{ exhibitionCountry }}</span></h3>
         <div class="painting-details">
-          <p class="painting-names">{{ name }}</p>
+          <p class="painting-names">{{ paintingsFormatted }}</p>
           <div class="painting-meta">
+            <!--  TODO link to museum id on visits page-->
             <p><b>Visit—</b>{{ date }} <a href="visits.html#">Details</a></p>
             {{#notes}}
             <p><span class="painting-meta"><b>Notes—</b>{{ notes }}</p>
@@ -81,23 +79,44 @@
     </div>
     {{/rows}}
   </script>
+
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      var html = Sheetsee.ich.paintings_template({'rows': sortData(vermeers)})
+      var html = Sheetsee.ich.paintings_template({ 'rows': sortData(vermeers) })
       $('#paintings').html(html)
 
       function sortData (data) {
-        console.log(data)
+        // This takes the data, which is for every painting, and
+        // sorts it by each visit and all the paintings seen at that time
+
         // TODO This will fail if I
         // visit two places in one day
         var visits = []
+        var visitsObj = {}
         var visitedDates = []
          data.forEach(function (visit) {
-          if (visit.seen && visitedDates.indexOf(visit.date) === -1) {
-            visits.push(visit)
+          if (!visit.seen) return
+          if (visitedDates.indexOf(visit.date) === -1) {
             visitedDates.push(visit.date)
+            // TODO this feels really redundant
+            visitsObj[visit.date] = {
+              'paintings': [visit.name],
+              'paintingsFormatted': visit.name,
+              'exhibitionLocation': visit.exhibitionLocation,
+              'exhibitionCity': visit.exhibitionCity,
+              'exhibitionCountry': visit.exhibitionCountry,
+              'notes': visit.notes,
+              'date': visit.date,
+              'photo': visit.photo
+            }
+          } else {
+            visitsObj[visit.date].paintings.push(visit.name)
+            visitsObj[visit.date].paintingsFormatted += ', ' + visit.name
           }
         })
+
+        for (visit in visitsObj) { visits.push(visitsObj[visit]) }
+
         return visits
       }
     })
