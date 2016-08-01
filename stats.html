@@ -58,46 +58,8 @@
     <script id="stats_template" type="text/html">
       <h1 class="leading-number">{{ stats.seenLength }}</h1>
       <h2>Vermeers Visited</h2>
-      <!-- TODO Generate this with painting names and seen status -->
-      <div class="painting-boxes">
-        <div class="painting-box seen-box"></div>
-        <div class="painting-box seen-box"></div>
-        <div class="painting-box seen-box"></div>
-        <div class="painting-box seen-box"></div>
-        <div class="painting-box seen-box"></div>
-        <div class="painting-box seen-box"></div>
-        <div class="painting-box seen-box"></div>
-        <div class="painting-box seen-box"></div>
-        <div class="painting-box seen-box"></div>
-        <div class="painting-box seen-box"></div>
-        <div class="painting-box seen-box"></div>
-        <div class="painting-box seen-box"></div>
-        <div class="painting-box seen-box"></div>
-        <div class="painting-box seen-box"></div>
-        <div class="painting-box seen-box"></div>
-        <div class="painting-box seen-box"></div>
-        <div class="painting-box seen-box"></div>
-        <div class="painting-box seen-box"></div>
-        <div class="painting-box seen-box"></div>
-        <div class="painting-box seen-box"></div>
-        <div class="painting-box seen-box"></div>
-        <div class="painting-box seen-box"></div>
-        <div class="painting-box seen-box"></div>
-        <div class="painting-box seen-box"></div>
-        <div class="painting-box"></div>
-        <div class="painting-box"></div>
-        <div class="painting-box"></div>
-        <div class="painting-box"></div>
-        <div class="painting-box"></div>
-        <div class="painting-box"></div>
-        <div class="painting-box"></div>
-        <div class="painting-box"></div>
-        <div class="painting-box"></div>
-        <div class="painting-box"></div>
-        <div class="painting-box cant-see-box"></div>
-        <div class="painting-box cant-see-box"></div>
-      </div>
-      <br><br>
+      <div id="painting-boxes"></div>
+      <br>
       <p>{{stats.seenFormatted}}</p>
       <h4 class="lighter-body">{{ stats.remainingPublicLength }} Remaining</h4>
       <p><span class="lighter-body">{{ stats.remainingFormatted }}</span></p>
@@ -127,6 +89,22 @@
         stats.remainingMuseumsFormatted = stats.remainingMuseums.join(', ')
         var html = Sheetsee.ich.stats_template({ stats })
         $('#stats').html(html)
+
+        function generatePaintingBoxes (stats) {
+          var string = ''
+          stats.seen.forEach(function (painting) {
+            return string += '<div class="painting-box seen-box" title="Seen: ' + painting + '"></div>'
+          })
+          stats.remainingPublic.forEach(function (painting) {
+            return string += '<div class="painting-box" title="Not yet seen: ' + painting + '"></div>'
+          })
+          stats.notPublic.forEach(function (painting) {
+            return string += '<div class="painting-box cant-see-box" title="Not public: ' + painting + '"></div>'
+          })
+          return string
+        }
+
+        document.getElementById('painting-boxes').innerHTML = generatePaintingBoxes(stats)
       })
     </script>
   </body>

@@ -236,6 +236,11 @@ footer h4 a {
   height: 36px;
   background: #6f7586;
   display: inline-block;
+  margin-right: 3px;
+}
+
+.painting-box:nth-child(18n) {
+  margin-right: 0;
 }
 
 .painting-box.seen-box {
