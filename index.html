@@ -68,8 +68,7 @@
         <div class="painting-details">
           <p class="painting-names">{{ paintingsFormatted }}</p>
           <div class="painting-meta">
-            <!--  TODO link to museum id on visits page-->
-            <p><b>Visit—</b>{{ date }} <a href="visits.html#">Details</a></p>
+            <p><b>Visit—</b>{{ date }} <a href="visits.html#{{ id }}">Details</a></p>
             {{#notes}}
             <p><span class="painting-meta"><b>Notes—</b>{{ notes }}</p>
             {{/notes}}
