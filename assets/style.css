@@ -1,16 +1,9 @@
-/*html {
-  height: 100%;
-  width: 100%;
-}*/
-
 body {
   font-family: 'Source Sans Pro', 'Helvetia', Arial, sans-serif;
   color: #2b334d;
   padding: 40px 0;
   height: 100%;
   overflow: auto;
-  /*line-height: 1.5em !important;*/
-  /* gradient bg */
   background: hsl(56,100%,97%);
   background: -moz-linear-gradient(-30deg, hsl(56,100%,97%) 0%, hsl(0,0%,86%) 100%);
   background: -webkit-gradient(left top, right bottom, color-stop(0%, hsl(56,100%,97%)), color-stop(100%, hsl(0,0%,86%)));
@@ -50,15 +43,13 @@ a:hover {
   border-color: #5D7192;
 }
 
-h1 {
-  font-size: 2.5em;
+h1, h2, h3 {
+  font-family: "Merriweather", Georgia, serif;
+  font-weight: 800;
 }
 
-/* TODO */
-
-h1, h2, h3 {
-  font-family: "Merriweather";
-  font-weight: 800;
+h1 {
+  font-size: 2.5em;
 }
 
 h1 a {
@@ -69,10 +60,8 @@ p {
   line-height: 1.4em;
 }
 
-/* TODO */
-
 em {
-  font-family: "Merriweather";
+  font-family: "Merriweather", Georgia, serif;
   font-style: italic;
   font-size: .9em;
 }
@@ -163,8 +152,6 @@ footer h4 a {
   margin-bottom: 8px;
 }
 
-/* TODO */
-
 .painting-container h3 {
   line-height: 1.5em;
 }
@@ -178,14 +165,12 @@ footer h4 a {
   width: calc((100% - 18px) * .39);
   display: inline-block;
   vertical-align: top;
-  /*background: salmon;*/
 }
 
 .most {
   width: calc((100% - 18px) * .6);
   display: inline-block;
   vertical-align: top;
-  /*background: pink;*/
 }
 
 .some + .most {
