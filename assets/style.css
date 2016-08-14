@@ -244,4 +244,5 @@ footer h4 a {
   .some + .most { margin: 10px 0; }
   .float-right { float: none; }
   .painting-info { padding-top: 18px; }
+  .force-wrap { white-space: normal; }
 }
