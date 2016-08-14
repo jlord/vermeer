@@ -214,16 +214,19 @@ footer h4 a {
   color: #929292;
 }
 
+#painting-boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .painting-box {
   width: 26px;
   height: 36px;
   background: #6f7586;
   display: inline-block;
   margin-right: 3px;
-}
-
-.painting-box:nth-child(18n) {
-  margin-right: 0;
+  margin-bottom: 3px;
+  flex-basis: auto;
 }
 
 .painting-box.seen-box {
