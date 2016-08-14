@@ -1,7 +1,7 @@
 body {
   font-family: 'Source Sans Pro', 'Helvetia', Arial, sans-serif;
   color: #2b334d;
-  padding: 40px 0;
+  padding: 40px 0; margin: 0;
   height: 100%;
   overflow: auto;
   background: hsl(56,100%,97%);
@@ -17,11 +17,6 @@ body {
   box-sizing: border-box;
 }
 
-.wrapper {
-  width: 900px;
-  margin: 0 auto;
-}
-
 main {
   padding: 60px 0;
 }
@@ -30,6 +25,8 @@ img {
   width: 100%;
   padding-bottom: 20px;
 }
+
+/* Links */
 
 a {
   color: #2b334d;
@@ -42,6 +39,8 @@ a:hover {
   color: #5D7192;
   border-color: #5D7192;
 }
+
+/* Text */
 
 h1, h2, h3 {
   font-family: "Merriweather", Georgia, serif;
@@ -70,6 +69,11 @@ em {
    Utilities
 */
 
+.wrapper {
+  width: 900px;
+  margin: 0 auto;
+}
+
 ul.no-style {
   list-style: none;
   padding: 0; margin: 0;
@@ -87,14 +91,8 @@ ul.tall-lines li {
   line-height: 1.8em;
 }
 
-.no-bold { font-weight: normal; }
-
-.painting-meta {
-  padding-top: 20px;
-}
-.painting-meta p {
-  font-size: 12px;
-  margin: 2px 0;
+.no-bold {
+  font-weight: normal;
 }
 
 .force-wrap {
@@ -105,18 +103,40 @@ ul.tall-lines li {
   float: left;
 }
 
-.inline-block {
-  display: inline-block;
+.float-right {
+  float: right;
 }
 
-.f-right {
-  float: right;
+.inline-block {
+  display: inline-block;
 }
 
 .divider-line {
   border-bottom: 2px solid #2b334d;
   padding-bottom: 20px;
   margin-bottom: 20px;
+}
+
+.some {
+  width: calc((100% - 18px) * .39);
+  display: inline-block;
+  vertical-align: top;
+}
+
+.most {
+  width: calc((100% - 18px) * .6);
+  display: inline-block;
+  vertical-align: top;
+}
+
+.some + .most {
+  margin-left: 23px;
+}
+
+.some h2:first-of-type,
+.some h3:first-of-type,
+.most p:first-of-type {
+  margin-top: 0;
 }
 
 /*
@@ -143,7 +163,7 @@ footer h4 a {
 }
 
 /*
-   Paintings
+   Index Page
 */
 
 .painting-container h3,
@@ -161,32 +181,18 @@ footer h4 a {
   padding-bottom: 40px;
 }
 
-.some {
-  width: calc((100% - 18px) * .39);
-  display: inline-block;
-  vertical-align: top;
+.painting-meta {
+  padding-top: 20px;
 }
 
-.most {
-  width: calc((100% - 18px) * .6);
-  display: inline-block;
-  vertical-align: top;
+.painting-meta p {
+  font-size: 12px;
+  margin: 2px 0;
 }
 
-.some + .most {
-  margin-left: 23px;
-}
-
-.some h2:first-of-type,
-.some h3:first-of-type {
-  margin-top: 0;
-}
-
-.most p:first-of-type {
-  margin-top: 0;
-}
-
-/* Stats Page */
+/*
+  Stats Page
+*/
 
 .leading-number {
   font-size: 6em;
@@ -208,14 +214,6 @@ footer h4 a {
   color: #929292;
 }
 
-@media (max-width: 900px) {
-  .wrapper { width: 100%; padding: 0 10px; }
-  .most, .some { display: block; width: 100%;}
-  .some + .most { margin-left: 0; }
-  .f-right { float: none; }
-  .painting-info { padding-top: 18px; }
-}
-
 .painting-box {
   width: 26px;
   height: 36px;
@@ -234,4 +232,16 @@ footer h4 a {
 
 .painting-box.cant-see-box {
   background: #929292;
+}
+
+/*
+  Media Queries
+*/
+
+@media (max-width: 900px) {
+  .wrapper { width: 100%; padding: 0 10px; }
+  .most, .some { display: block; width: 100%; }
+  .some + .most { margin: 10px 0; }
+  .float-right { float: none; }
+  .painting-info { padding-top: 18px; }
 }
