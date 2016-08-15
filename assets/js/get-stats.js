@@ -12,6 +12,7 @@ function writeStats() {
   getVisible(data)
   getSeen(data)
   fs.writeFileSync('assets/stats.json', 'var stats = ' + JSON.stringify(stats, null, ' '))
+  console.log('✨\n')
 }
 
 function getCountries (data) {
