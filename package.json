@@ -1,17 +1,17 @@
 {
   "name": "vermeer",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A site for documenting my visits to each Vermeer painting known and shown.",
+  "main": "assets/js/index.js",
   "scripts": {
     "data": "node assets/js/index.js",
-    "stats": "node assets/js/assess-data.js"
+    "stats": "node assets/js/get-stats.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jlord/vermeer.git"
   },
-  "author": "",
+  "author": "Jessica Lord",
   "license": "BSD",
   "bugs": {
     "url": "https://github.com/jlord/vermeer/issues"
