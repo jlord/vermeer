@@ -76,7 +76,7 @@
           <div class="painting-meta">
             <p><b>Visit—</b>{{ date }} <a href="visits.html#{{ id }}">Details</a></p>
             {{#notes}}
-            <p><span class="painting-meta"><b>Notes—</b>{{ notes }}</p>
+            <p class="painting-meta"><b>Notes—</b>{{ notes }}</p>
             {{/notes}}
           </div>
         </div>
@@ -112,7 +112,8 @@
               'exhibitionCountry': visit.exhibitionCountry,
               'notes': visit.notes,
               'date': visit.date,
-              'photo': visit.photo
+              'photo': visit.photo,
+              'id': visit.id
             }
           } else {
             visitsObj[visit.date].paintings.push(visit.name)
