@@ -12,7 +12,10 @@ function init() {
 }
 
 function saveData(data, tabletop) {
-  var vermeers = 'var vermeers = ' + JSON.stringify(data, null, ' ')
+  var formattedBlooleans = JSON.stringify(data, null, ' ')
+    .replace(new RegExp('"true"', 'g'), true)
+    .replace(new RegExp('"false"', 'g'), false)
+  var vermeers = 'var vermeers = ' + formattedBlooleans
   fs.writeFileSync('assets/data.json', vermeers)
-  console.log('✨')
+  console.log('✨\n')
 }
