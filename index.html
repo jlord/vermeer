@@ -123,8 +123,15 @@
 
         for (visit in visitsObj) { visits.push(visitsObj[visit]) }
 
-        return visits
+        return sortByDate(visits).reverse()
       }
+
+      function sortByDate(visits) {
+        return visits.sort(function (a, b) {
+          return (new Date(a.date) - new Date(b.date))
+        })
+      }
+
     })
   </script>
 </html>
