@@ -10,13 +10,13 @@ var vermeers = [
   "seen": true,
   "public": true,
   "date": "10/11/2015",
-  "id": "mfa",
+  "visitID": "mfa",
   "photo": "mfa.jpg",
   "notes": "Special exhibition: Class Distinctions: Dutch Painting in the Age of Rembrandt and Vermeer. Astronomer on loan from the Louvre."
  },
  {
   "name": "A Lady Writing",
-  "permanentLocation": "National Gallery of Art, USA",
+  "permanentLocation": "National Gallery of Art",
   "permanentCity": "Washington, DC",
   "permanentCountry": "United States",
   "exhibitionLocation": "Boston Museum of Fine Arts",
@@ -25,7 +25,7 @@ var vermeers = [
   "seen": true,
   "public": true,
   "date": "10/11/2015",
-  "id": "mfa",
+  "visitID": "mfa",
   "photo": "mfa.jpg",
   "notes": "Special exhibition: Class Distinctions: Dutch Painting in the Age of Rembrandt and Vermeer. Astronomer on loan from the Louvre."
  },
@@ -40,7 +40,7 @@ var vermeers = [
   "seen": true,
   "public": true,
   "date": "5/7/2016",
-  "id": "gemaldegalerie-dresden",
+  "visitID": "gemaldegalerie-dresden",
   "photo": "dresden.jpg",
   "notes": ""
  },
@@ -55,7 +55,7 @@ var vermeers = [
   "seen": true,
   "public": true,
   "date": "5/7/2016",
-  "id": "gemaldegalerie-dresden",
+  "visitID": "gemaldegalerie-dresden",
   "photo": "dresden.jpg",
   "notes": ""
  },
@@ -70,7 +70,7 @@ var vermeers = [
   "seen": true,
   "public": true,
   "date": "11/15/2105",
-  "id": "kenwood",
+  "visitID": "kenwood",
   "photo": "kenwood.jpg",
   "notes": ""
  },
@@ -85,7 +85,7 @@ var vermeers = [
   "seen": true,
   "public": true,
   "date": "5/9/2016",
-  "id": "mauritshuis",
+  "visitID": "mauritshuis",
   "photo": "mauritshuis.jpg",
   "notes": ""
  },
@@ -100,7 +100,7 @@ var vermeers = [
   "seen": true,
   "public": true,
   "date": "5/9/2016",
-  "id": "mauritshuis",
+  "visitID": "mauritshuis",
   "photo": "mauritshuis.jpg",
   "notes": ""
  },
@@ -115,37 +115,37 @@ var vermeers = [
   "seen": true,
   "public": true,
   "date": "5/9/2016",
-  "id": "mauritshuis",
+  "visitID": "mauritshuis",
   "photo": "mauritshuis.jpg",
   "notes": ""
  },
  {
   "name": "A Lady Standing at a Virginal",
-  "permanentLocation": "National Gallery, England",
+  "permanentLocation": "National Gallery",
   "permanentCity": "London",
   "permanentCountry": "England",
-  "exhibitionLocation": "National Gallery, England",
+  "exhibitionLocation": "National Gallery",
   "exhibitionCity": "London",
   "exhibitionCountry": "England",
   "seen": true,
   "public": true,
   "date": "11/19/2015",
-  "id": "national-gallery-lon",
+  "visitID": "national-gallery-lon",
   "photo": "nglnd.jpg",
   "notes": ""
  },
  {
   "name": "A Lady Seated at a Virginal",
-  "permanentLocation": "National Gallery, England",
+  "permanentLocation": "National Gallery",
   "permanentCity": "London",
   "permanentCountry": "England",
-  "exhibitionLocation": "National Gallery, England",
+  "exhibitionLocation": "National Gallery",
   "exhibitionCity": "London",
   "exhibitionCountry": "England",
   "seen": true,
   "public": true,
   "date": "11/19/2015",
-  "id": "national-gallery-lon",
+  "visitID": "national-gallery-lon",
   "photo": "nglnd.jpg",
   "notes": ""
  },
@@ -160,7 +160,7 @@ var vermeers = [
   "seen": true,
   "public": true,
   "date": "8/18/2015",
-  "id": "rijksmuseum",
+  "visitID": "rijksmuseum",
   "photo": "rijks.jpg",
   "notes": "Woman in Blue Reading a Letter on loan to Washington, DC."
  },
@@ -175,7 +175,7 @@ var vermeers = [
   "seen": true,
   "public": true,
   "date": "8/18/2015",
-  "id": "rijksmuseum",
+  "visitID": "rijksmuseum",
   "photo": "rijks.jpg",
   "notes": "Woman in Blue Reading a Letter on loan to Washington, DC."
  },
@@ -190,7 +190,7 @@ var vermeers = [
   "seen": true,
   "public": true,
   "date": "8/18/2015",
-  "id": "rijksmuseum",
+  "visitID": "rijksmuseum",
   "photo": "rijks.jpg",
   "notes": "Woman in Blue Reading a Letter on loan to Washington, DC."
  },
@@ -205,37 +205,37 @@ var vermeers = [
   "seen": true,
   "public": true,
   "date": "5/10/2016",
-  "id": "rijksmuseum",
+  "visitID": "rijksmuseum",
   "photo": "rijks2.jpg",
   "notes": "Woman in Blue Reading a Letter back in the permanent collection."
  },
  {
   "name": "The Glass of Wine",
-  "permanentLocation": "Gemäldegalerie, Berlin",
+  "permanentLocation": "Gemäldegalerie",
   "permanentCity": "Berlin",
   "permanentCountry": "Germany",
-  "exhibitionLocation": "Gemäldegalerie, Berlin",
+  "exhibitionLocation": "Gemäldegalerie",
   "exhibitionCity": "Berlin",
   "exhibitionCountry": "Germany",
   "seen": true,
   "public": true,
   "date": "5/6/2016",
-  "id": "gemaldegalerie-berlin",
+  "visitID": "gemaldegalerie-berlin",
   "photo": "berlin.jpg",
   "notes": ""
  },
  {
   "name": "Woman with a Pearl Necklace",
-  "permanentLocation": "Gemäldegalerie, Berlin",
+  "permanentLocation": "Gemäldegalerie",
   "permanentCity": "Berlin",
   "permanentCountry": "Germany",
-  "exhibitionLocation": "Gemäldegalerie, Berlin",
+  "exhibitionLocation": "Gemäldegalerie",
   "exhibitionCity": "Berlin",
   "exhibitionCountry": "Germany",
   "seen": true,
   "public": true,
   "date": "5/6/2016",
-  "id": "gemaldegalerie-berlin",
+  "visitID": "gemaldegalerie-berlin",
   "photo": "berlin.jpg",
   "notes": ""
  },
@@ -250,7 +250,7 @@ var vermeers = [
   "seen": true,
   "public": true,
   "date": "10/6/2015",
-  "id": "frick",
+  "visitID": "frick",
   "photo": "frick.jpg",
   "notes": "You can't take photos of the paintings, so this is the courtyard."
  },
@@ -265,7 +265,7 @@ var vermeers = [
   "seen": true,
   "public": true,
   "date": "10/6/2015",
-  "id": "frick",
+  "visitID": "frick",
   "photo": "frick.jpg",
   "notes": "You can't take photos of the paintings, so this is the courtyard."
  },
@@ -280,7 +280,7 @@ var vermeers = [
   "seen": true,
   "public": true,
   "date": "10/6/2015",
-  "id": "frick",
+  "visitID": "frick",
   "photo": "frick.jpg",
   "notes": "You can't take photos of the paintings, so this is the courtyard."
  },
@@ -295,7 +295,7 @@ var vermeers = [
   "seen": true,
   "public": true,
   "date": "10/8/2015",
-  "id": "the-met",
+  "visitID": "the-met",
   "photo": "met.jpg",
   "notes": "Young Woman with a Water Pitcher on loan to Kyoto."
  },
@@ -310,7 +310,7 @@ var vermeers = [
   "seen": true,
   "public": true,
   "date": "10/8/2015",
-  "id": "the-met",
+  "visitID": "the-met",
   "photo": "met.jpg",
   "notes": "Young Woman with a Water Pitcher on loan to Kyoto."
  },
@@ -325,7 +325,7 @@ var vermeers = [
   "seen": true,
   "public": true,
   "date": "10/8/2015",
-  "id": "the-met",
+  "visitID": "the-met",
   "photo": "met.jpg",
   "notes": "Young Woman with a Water Pitcher on loan to Kyoto."
  },
@@ -340,7 +340,7 @@ var vermeers = [
   "seen": true,
   "public": true,
   "date": "10/8/2015",
-  "id": "the-met",
+  "visitID": "the-met",
   "photo": "met.jpg",
   "notes": "Young Woman with a Water Pitcher on loan to Kyoto."
  },
@@ -355,8 +355,23 @@ var vermeers = [
   "seen": true,
   "public": true,
   "date": "11/19/2015",
-  "id": "queens-gallery",
+  "visitID": "queens-gallery",
   "photo": "qgbhp.jpg",
+  "notes": ""
+ },
+ {
+  "name": "Young Woman with a Water Pitcher",
+  "permanentLocation": "The Metropolitan Museum of Art",
+  "permanentCity": "New York City",
+  "permanentCountry": "United States",
+  "exhibitionLocation": "The Metropolitan Museum of Art",
+  "exhibitionCity": "New York City",
+  "exhibitionCountry": "United States",
+  "seen": true,
+  "public": true,
+  "date": "10/1/2016",
+  "visitID": "the-met",
+  "photo": "met2.jpg",
   "notes": ""
  },
  {
@@ -370,7 +385,7 @@ var vermeers = [
   "seen": false,
   "public": false,
   "date": "",
-  "id": "",
+  "visitID": "",
   "photo": "",
   "notes": ""
  },
@@ -385,7 +400,7 @@ var vermeers = [
   "seen": false,
   "public": false,
   "date": "",
-  "id": "",
+  "visitID": "",
   "photo": "",
   "notes": ""
  },
@@ -400,7 +415,7 @@ var vermeers = [
   "seen": false,
   "public": true,
   "date": "",
-  "id": "",
+  "visitID": "",
   "photo": "",
   "notes": ""
  },
@@ -415,7 +430,7 @@ var vermeers = [
   "seen": false,
   "public": true,
   "date": "",
-  "id": "",
+  "visitID": "",
   "photo": "",
   "notes": ""
  },
@@ -430,7 +445,7 @@ var vermeers = [
   "seen": false,
   "public": true,
   "date": "",
-  "id": "",
+  "visitID": "",
   "photo": "",
   "notes": ""
  },
@@ -445,7 +460,7 @@ var vermeers = [
   "seen": false,
   "public": true,
   "date": "",
-  "id": "",
+  "visitID": "",
   "photo": "",
   "notes": ""
  },
@@ -460,7 +475,7 @@ var vermeers = [
   "seen": false,
   "public": true,
   "date": "",
-  "id": "",
+  "visitID": "",
   "photo": "",
   "notes": ""
  },
@@ -475,7 +490,7 @@ var vermeers = [
   "seen": false,
   "public": true,
   "date": "",
-  "id": "",
+  "visitID": "",
   "photo": "",
   "notes": ""
  },
@@ -490,7 +505,7 @@ var vermeers = [
   "seen": false,
   "public": true,
   "date": "",
-  "id": "",
+  "visitID": "",
   "photo": "",
   "notes": ""
  },
@@ -505,7 +520,7 @@ var vermeers = [
   "seen": false,
   "public": true,
   "date": "",
-  "id": "",
+  "visitID": "",
   "photo": "",
   "notes": ""
  },
@@ -520,22 +535,7 @@ var vermeers = [
   "seen": false,
   "public": true,
   "date": "",
-  "id": "",
-  "photo": "",
-  "notes": ""
- },
- {
-  "name": "Young Woman with a Water Pitcher",
-  "permanentLocation": "The Metropolitan Museum of Art",
-  "permanentCity": "New York City",
-  "permanentCountry": "United States",
-  "exhibitionLocation": "",
-  "exhibitionCity": "",
-  "exhibitionCountry": "",
-  "seen": false,
-  "public": true,
-  "date": "",
-  "id": "",
+  "visitID": "",
   "photo": "",
   "notes": ""
  }
