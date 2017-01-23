@@ -25,9 +25,10 @@ var stats = {
   "Gemäldegalerie",
   "The Frick Collection",
   "The Metropolitan Museum of Art",
-  "The Queen's Gallery"
+  "The Queen's Gallery",
+  "National Gallery of Art, USA"
  ],
- "visitedMuseumsLength": 10,
+ "visitedMuseumsLength": 11,
  "remainingMuseums": [
   "Herzog Anton Ulrich-Museum",
   "Kunsthistorisches Museum",
@@ -64,12 +65,12 @@ var stats = {
   "Allegory of Faith",
   "The Music Lesson",
   "Young Woman with a Water Pitcher",
+  "Girl with a Red Hat",
+  "Girl with a Flute",
   "The Girl with a Glass of Wine",
   "The Art of Painting",
   "The Lacemaker",
   "Woman Holding a Balance",
-  "Girl with a Red Hat",
-  "Girl with a Flute",
   "Lady Writing a Letter with her Maid",
   "Christ in the House of Martha and Mary",
   "The Geographer"
@@ -101,12 +102,12 @@ var stats = {
   "Allegory of Faith",
   "The Music Lesson",
   "Young Woman with a Water Pitcher",
+  "Girl with a Red Hat",
+  "Girl with a Flute",
   "The Girl with a Glass of Wine",
   "The Art of Painting",
   "The Lacemaker",
   "Woman Holding a Balance",
-  "Girl with a Red Hat",
-  "Girl with a Flute",
   "Lady Writing a Letter with her Maid",
   "Christ in the House of Martha and Mary",
   "The Geographer",
@@ -144,9 +145,11 @@ var stats = {
   "Study of a Young Woman",
   "Allegory of Faith",
   "The Music Lesson",
-  "Young Woman with a Water Pitcher"
+  "Young Woman with a Water Pitcher",
+  "Girl with a Red Hat",
+  "Girl with a Flute"
  ],
- "seenLength": 25,
+ "seenLength": 27,
  "remaining": [
   "The Concert",
   "A Young Woman Seated at the Virginals",
@@ -154,8 +157,6 @@ var stats = {
   "The Art of Painting",
   "The Lacemaker",
   "Woman Holding a Balance",
-  "Girl with a Red Hat",
-  "Girl with a Flute",
   "Lady Writing a Letter with her Maid",
   "Christ in the House of Martha and Mary",
   "The Geographer"
@@ -165,12 +166,10 @@ var stats = {
   "The Art of Painting",
   "The Lacemaker",
   "Woman Holding a Balance",
-  "Girl with a Red Hat",
-  "Girl with a Flute",
   "Lady Writing a Letter with her Maid",
   "Christ in the House of Martha and Mary",
   "The Geographer"
  ],
- "remainingLength": 11,
- "remainingPublicLength": 9
+ "remainingLength": 9,
+ "remainingPublicLength": 7
 }
