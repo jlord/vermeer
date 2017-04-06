@@ -17,23 +17,6 @@ var vermeers = [
   "notes": ""
  },
  {
-  "name": "A Young Woman Seated at the Virginals",
-  "isHiRes": "N",
-  "artworkImg": "A Young Woman Seated at the Virginals (Leiden).jpg",
-  "permanentLocation": "Private Collection",
-  "permanentCity": "New York, New York",
-  "permanentCountry": "United States",
-  "exhibitionLocation": "",
-  "exhibitionCity": "",
-  "exhibitionCountry": "",
-  "seen": false,
-  "public": false,
-  "date": "",
-  "visitID": "",
-  "photo": "",
-  "notes": ""
- },
- {
   "name": "The Girl with a Glass of Wine",
   "isHiRes": "N",
   "artworkImg": "The Girl with the Glass of Wine (Herzog Anton Ulrich).jpg",
@@ -68,21 +51,38 @@ var vermeers = [
   "notes": ""
  },
  {
+  "name": "A Young Woman Seated at the Virginals",
+  "isHiRes": "N",
+  "artworkImg": "A Young Woman Seated at the Virginals (Leiden).jpg",
+  "permanentLocation": "Private Collection",
+  "permanentCity": "New York, New York",
+  "permanentCountry": "United States",
+  "exhibitionLocation": "Louvre",
+  "exhibitionCity": "Paris",
+  "exhibitionCountry": "France",
+  "seen": true,
+  "public": true,
+  "date": "4/1/2017",
+  "visitID": "louvre",
+  "photo": "louvre.jpg",
+  "notes": "Exhibition: Vermeer and the Masters of Genre Painting"
+ },
+ {
   "name": "The Lacemaker",
   "isHiRes": "N",
   "artworkImg": "The Lacemaker (Louvre).jpg",
   "permanentLocation": "Musée du Louvre",
   "permanentCity": "Paris",
   "permanentCountry": "France",
-  "exhibitionLocation": "",
-  "exhibitionCity": "",
-  "exhibitionCountry": "",
-  "seen": false,
+  "exhibitionLocation": "Louvre",
+  "exhibitionCity": "Paris",
+  "exhibitionCountry": "France",
+  "seen": true,
   "public": true,
-  "date": "",
-  "visitID": "",
-  "photo": "",
-  "notes": ""
+  "date": "4/1/2017",
+  "visitID": "louvre",
+  "photo": "louvre.jpg",
+  "notes": "Exhibition: Vermeer and the Masters of Genre Painting"
  },
  {
   "name": "Woman Holding a Balance",
@@ -91,15 +91,15 @@ var vermeers = [
   "permanentLocation": "National Gallery of Art, USA",
   "permanentCity": "Washington, DC",
   "permanentCountry": "United States",
-  "exhibitionLocation": "",
-  "exhibitionCity": "",
-  "exhibitionCountry": "",
-  "seen": false,
+  "exhibitionLocation": "Louvre",
+  "exhibitionCity": "Paris",
+  "exhibitionCountry": "France",
+  "seen": true,
   "public": true,
-  "date": "",
-  "visitID": "",
-  "photo": "",
-  "notes": ""
+  "date": "4/1/2017",
+  "visitID": "louvre",
+  "photo": "louvre.jpg",
+  "notes": "Exhibition: Vermeer and the Masters of Genre Painting"
  },
  {
   "name": "Lady Writing a Letter with her Maid",
@@ -108,15 +108,15 @@ var vermeers = [
   "permanentLocation": "National Gallery of Ireland",
   "permanentCity": "Dublin",
   "permanentCountry": "Ireland",
-  "exhibitionLocation": "",
-  "exhibitionCity": "",
-  "exhibitionCountry": "",
-  "seen": false,
+  "exhibitionLocation": "Louvre",
+  "exhibitionCity": "Paris",
+  "exhibitionCountry": "France",
+  "seen": true,
   "public": true,
-  "date": "",
-  "visitID": "",
-  "photo": "",
-  "notes": ""
+  "date": "4/1/2017",
+  "visitID": "louvre",
+  "photo": "louvre.jpg",
+  "notes": "Exhibition: Vermeer and the Masters of Genre Painting"
  },
  {
   "name": "The Geographer",
@@ -125,15 +125,15 @@ var vermeers = [
   "permanentLocation": "Städelsches Kunstinstitut",
   "permanentCity": "Frankfurt",
   "permanentCountry": "Germany",
-  "exhibitionLocation": "",
-  "exhibitionCity": "",
-  "exhibitionCountry": "",
-  "seen": false,
+  "exhibitionLocation": "Louvre",
+  "exhibitionCity": "Paris",
+  "exhibitionCountry": "France",
+  "seen": true,
   "public": true,
-  "date": "",
-  "visitID": "",
-  "photo": "",
-  "notes": ""
+  "date": "4/1/2017",
+  "visitID": "louvre",
+  "photo": "louvre.jpg",
+  "notes": "Exhibition: Vermeer and the Masters of Genre Painting"
  },
  {
   "name": "The Astronomer",
@@ -150,7 +150,7 @@ var vermeers = [
   "date": "10/11/2015",
   "visitID": "mfa",
   "photo": "mfa.jpg",
-  "notes": "Special exhibition: Class Distinctions: Dutch Painting in the Age of Rembrandt and Vermeer. Astronomer on loan from the Louvre."
+  "notes": "Exhibition: Class Distinctions: Dutch Painting in the Age of Rembrandt and Vermeer. Astronomer on loan from the Louvre."
  },
  {
   "name": "A Lady Writing",
@@ -167,7 +167,7 @@ var vermeers = [
   "date": "10/11/2015",
   "visitID": "mfa",
   "photo": "mfa.jpg",
-  "notes": "Special exhibition: Class Distinctions: Dutch Painting in the Age of Rembrandt and Vermeer. Astronomer on loan from the Louvre."
+  "notes": "Exhibition: Class Distinctions: Dutch Painting in the Age of Rembrandt and Vermeer. Astronomer on loan from the Louvre."
  },
  {
   "name": "The Procuress",

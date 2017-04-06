@@ -1,21 +1,20 @@
 var stats = {
  "visitedCountries": [
+  "France",
   "United States",
   "Germany",
   "England",
   "Netherlands",
   "Scotland"
  ],
- "visitedCountriesLength": 5,
+ "visitedCountriesLength": 6,
  "remainingCountries": [
   "Germany",
-  "Austria",
-  "France",
-  "United States",
-  "Ireland"
+  "Austria"
  ],
- "remainingCountriesLength": 5,
+ "remainingCountriesLength": 2,
  "visitedMuseums": [
+  "Louvre",
   "Boston Museum of Fine Arts",
   "Gemäldegalerie Alte Meister",
   "Kenwood House",
@@ -29,19 +28,16 @@ var stats = {
   "National Gallery of Art, USA",
   "Scottish National Gallery"
  ],
- "visitedMuseumsLength": 12,
+ "visitedMuseumsLength": 13,
  "remainingMuseums": [
   "Herzog Anton Ulrich-Museum",
-  "Kunsthistorisches Museum",
-  "Musée du Louvre",
-  "National Gallery of Art, USA",
-  "National Gallery of Ireland",
-  "Städelsches Kunstinstitut"
+  "Kunsthistorisches Museum"
  ],
- "remainingMuseumsLength": 6,
+ "remainingMuseumsLength": 2,
  "public": [
   "The Girl with a Glass of Wine",
   "The Art of Painting",
+  "A Young Woman Seated at the Virginals",
   "The Lacemaker",
   "Woman Holding a Balance",
   "Lady Writing a Letter with her Maid",
@@ -75,10 +71,11 @@ var stats = {
   "Girl with a Flute",
   "Christ in the House of Martha and Mary"
  ],
- "publicNo": 34,
+ "publicNo": 35,
  "all": [
   "The Girl with a Glass of Wine",
   "The Art of Painting",
+  "A Young Woman Seated at the Virginals",
   "The Lacemaker",
   "Woman Holding a Balance",
   "Lady Writing a Letter with her Maid",
@@ -111,16 +108,19 @@ var stats = {
   "Girl with a Red Hat",
   "Girl with a Flute",
   "Christ in the House of Martha and Mary",
-  "The Concert",
-  "A Young Woman Seated at the Virginals"
+  "The Concert"
  ],
  "allLength": 36,
  "notPublic": [
-  "The Concert",
-  "A Young Woman Seated at the Virginals"
+  "The Concert"
  ],
- "notPublicLength": 2,
+ "notPublicLength": 1,
  "seen": [
+  "A Young Woman Seated at the Virginals",
+  "The Lacemaker",
+  "Woman Holding a Balance",
+  "Lady Writing a Letter with her Maid",
+  "The Geographer",
   "The Astronomer",
   "A Lady Writing",
   "The Procuress",
@@ -150,25 +150,16 @@ var stats = {
   "Girl with a Flute",
   "Christ in the House of Martha and Mary"
  ],
- "seenLength": 28,
+ "seenLength": 33,
  "remaining": [
   "The Concert",
-  "A Young Woman Seated at the Virginals",
   "The Girl with a Glass of Wine",
-  "The Art of Painting",
-  "The Lacemaker",
-  "Woman Holding a Balance",
-  "Lady Writing a Letter with her Maid",
-  "The Geographer"
+  "The Art of Painting"
  ],
  "remainingPublic": [
   "The Girl with a Glass of Wine",
-  "The Art of Painting",
-  "The Lacemaker",
-  "Woman Holding a Balance",
-  "Lady Writing a Letter with her Maid",
-  "The Geographer"
+  "The Art of Painting"
  ],
- "remainingLength": 8,
- "remainingPublicLength": 6
+ "remainingLength": 3,
+ "remainingPublicLength": 1
 }
