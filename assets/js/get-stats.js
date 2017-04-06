@@ -78,7 +78,7 @@ function getSeen (data) {
   stats.remaining = remaining
   stats.remainingPublic = remainingPublic
   stats.remainingLength = remaining.length
-  stats.remainingPublicLength = remaining.length - 2 // minus not public pieces
+  stats.remainingPublicLength = remaining.length - 1 // minus not public pieces
 }
 
 function formatData (data) {
