@@ -1,19 +1,19 @@
 var stats = {
  "visitedCountries": [
+  "Germany",
   "France",
   "United States",
-  "Germany",
   "England",
   "Netherlands",
   "Scotland"
  ],
  "visitedCountriesLength": 6,
  "remainingCountries": [
-  "Germany",
   "Austria"
  ],
- "remainingCountriesLength": 2,
+ "remainingCountriesLength": 1,
  "visitedMuseums": [
+  "Herzog Anton Ulrich-Museum",
   "Louvre",
   "Boston Museum of Fine Arts",
   "Gemäldegalerie Alte Meister",
@@ -28,15 +28,14 @@ var stats = {
   "National Gallery of Art, USA",
   "Scottish National Gallery"
  ],
- "visitedMuseumsLength": 13,
+ "visitedMuseumsLength": 14,
  "remainingMuseums": [
-  "Herzog Anton Ulrich-Museum",
   "Kunsthistorisches Museum"
  ],
- "remainingMuseumsLength": 2,
+ "remainingMuseumsLength": 1,
  "public": [
-  "The Girl with a Glass of Wine",
   "The Art of Painting",
+  "The Girl with a Glass of Wine",
   "A Young Woman Seated at the Virginals",
   "The Lacemaker",
   "Woman Holding a Balance",
@@ -73,8 +72,8 @@ var stats = {
  ],
  "publicNo": 35,
  "all": [
-  "The Girl with a Glass of Wine",
   "The Art of Painting",
+  "The Girl with a Glass of Wine",
   "A Young Woman Seated at the Virginals",
   "The Lacemaker",
   "Woman Holding a Balance",
@@ -116,6 +115,7 @@ var stats = {
  ],
  "notPublicLength": 1,
  "seen": [
+  "The Girl with a Glass of Wine",
   "A Young Woman Seated at the Virginals",
   "The Lacemaker",
   "Woman Holding a Balance",
@@ -150,16 +150,14 @@ var stats = {
   "Girl with a Flute",
   "Christ in the House of Martha and Mary"
  ],
- "seenLength": 33,
+ "seenLength": 34,
  "remaining": [
   "The Concert",
-  "The Girl with a Glass of Wine",
   "The Art of Painting"
  ],
  "remainingPublic": [
-  "The Girl with a Glass of Wine",
   "The Art of Painting"
  ],
- "remainingLength": 3,
- "remainingPublicLength": 2
+ "remainingLength": 2,
+ "remainingPublicLength": 1
 }

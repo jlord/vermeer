@@ -17,23 +17,6 @@ var vermeers = [
   "notes": ""
  },
  {
-  "name": "The Girl with a Glass of Wine",
-  "isHiRes": "N",
-  "artworkImg": "The Girl with the Glass of Wine (Herzog Anton Ulrich).jpg",
-  "permanentLocation": "Herzog Anton Ulrich-Museum",
-  "permanentCity": "Brunswick",
-  "permanentCountry": "Germany",
-  "exhibitionLocation": "",
-  "exhibitionCity": "",
-  "exhibitionCountry": "",
-  "seen": false,
-  "public": true,
-  "date": "",
-  "visitID": "",
-  "photo": "",
-  "notes": ""
- },
- {
   "name": "The Art of Painting",
   "isHiRes": "",
   "artworkImg": "The Art of Painting (Kunsthistorisches).jpg",
@@ -48,6 +31,23 @@ var vermeers = [
   "date": "",
   "visitID": "",
   "photo": "",
+  "notes": ""
+ },
+ {
+  "name": "The Girl with a Glass of Wine",
+  "isHiRes": "N",
+  "artworkImg": "The Girl with the Glass of Wine (Herzog Anton Ulrich).jpg",
+  "permanentLocation": "Herzog Anton Ulrich-Museum",
+  "permanentCity": "Brunswick",
+  "permanentCountry": "Germany",
+  "exhibitionLocation": "Herzog Anton Ulrich-Museum",
+  "exhibitionCity": "Brunswick",
+  "exhibitionCountry": "Germany",
+  "seen": true,
+  "public": true,
+  "date": "5/11/2017",
+  "visitID": "bruns",
+  "photo": "bruns.jpg",
   "notes": ""
  },
  {
