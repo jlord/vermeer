@@ -1,5 +1,6 @@
 var stats = {
  "visitedCountries": [
+  "Austria",
   "Germany",
   "France",
   "United States",
@@ -7,12 +8,11 @@ var stats = {
   "Netherlands",
   "Scotland"
  ],
- "visitedCountriesLength": 6,
- "remainingCountries": [
-  "Austria"
- ],
- "remainingCountriesLength": 1,
+ "visitedCountriesLength": 7,
+ "remainingCountries": [],
+ "remainingCountriesLength": 0,
  "visitedMuseums": [
+  "Kunsthistorisches Museum",
   "Herzog Anton Ulrich Museum",
   "Louvre",
   "Boston Museum of Fine Arts",
@@ -28,11 +28,9 @@ var stats = {
   "National Gallery of Art, USA",
   "Scottish National Gallery"
  ],
- "visitedMuseumsLength": 14,
- "remainingMuseums": [
-  "Kunsthistorisches Museum"
- ],
- "remainingMuseumsLength": 1,
+ "visitedMuseumsLength": 15,
+ "remainingMuseums": [],
+ "remainingMuseumsLength": 0,
  "public": [
   "The Art of Painting",
   "The Girl with a Glass of Wine",
@@ -115,6 +113,7 @@ var stats = {
  ],
  "notPublicLength": 1,
  "seen": [
+  "The Art of Painting",
   "The Girl with a Glass of Wine",
   "A Young Woman Seated at the Virginals",
   "The Lacemaker",
@@ -150,14 +149,11 @@ var stats = {
   "Girl with a Flute",
   "Christ in the House of Martha and Mary"
  ],
- "seenLength": 34,
+ "seenLength": 35,
  "remaining": [
-  "The Concert",
-  "The Art of Painting"
+  "The Concert"
  ],
- "remainingPublic": [
-  "The Art of Painting"
- ],
- "remainingLength": 2,
- "remainingPublicLength": 1
+ "remainingPublic": [],
+ "remainingLength": 1,
+ "remainingPublicLength": 0
 }
