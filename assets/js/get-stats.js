@@ -3,16 +3,26 @@ var data = fs.readFileSync('assets/data.json').toString()
 
 var stats = {}
 
-writeStats()
+writeStats(data)
 
-function writeStats() {
-  data = formatData(data)
-  getCountries(data)
-  getMusuems(data)
-  getVisible(data)
-  getSeen(data)
+function writeStats(data) {
+  visits = formatData(data)
+  // Remove the item that is hometown visit
+  // and not painting visit
+  i = visits.findIndex(getHometownVisit)
+  visits.splice(i, 1)
+  // Get stats
+  getCountries(visits)
+  getMusuems(visits)
+  getVisible(visits)
+  getSeen(visits)
+  // Write it down
   fs.writeFileSync('assets/stats.json', 'var stats = ' + JSON.stringify(stats, null, ' '))
   console.log('✨\n')
+}
+
+function getHometownVisit (visit) {
+  return visit.visitID === 'delft'
 }
 
 function getCountries (data) {
