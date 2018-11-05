@@ -17,7 +17,6 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,900|Source+Sans+Pro:400,700" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
     <script src="assets/data.json"></script>
-    <script src="assets/js/jquery.js"></script>
     <script src="assets/js/sheetsee.js"></script>
   </head>
   <body>
@@ -90,7 +89,8 @@
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       var html = Sheetsee.ich.paintings_template({ 'rows': sortData(vermeers) })
-      $('#paintings').html(html)
+      document.getElementById('paintings').innerHTML = html
+
 
       function sortData (data) {
         // This takes the data, which is for every painting, and
