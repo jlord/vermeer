@@ -6,7 +6,7 @@
   "scripts": {
     "data": "node assets/js/index.js",
     "stats": "node assets/js/get-stats.js",
-    "all-data": "npm run data && npm run stats"
+    "build": "npm run data && npm run stats"
   },
   "repository": {
     "type": "git",
